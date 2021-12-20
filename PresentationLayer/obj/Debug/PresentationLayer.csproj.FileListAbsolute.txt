@@ -10,3 +10,8 @@ F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.Cor
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Register.resources
+F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Menu.resources
+F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.resources
+F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
+F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
+F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources

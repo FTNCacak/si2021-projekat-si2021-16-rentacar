@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace SI2021_16_RentACar
 {
-    public partial class Menu : Form
+    public partial class RentList : Form
     {
-        public Menu()
+        public RentList()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
