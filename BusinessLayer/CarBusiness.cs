@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer
 {
-    public class ProductBusiness
+    public class CarBusiness
     {
 
     }
