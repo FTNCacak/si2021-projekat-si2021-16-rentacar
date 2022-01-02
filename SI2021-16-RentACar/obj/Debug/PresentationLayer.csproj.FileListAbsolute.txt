@@ -15,3 +15,20 @@ F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.reso
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
 F:\New folder\RentACar\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe.config
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.pdb
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Info.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Menu.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Properties.Resources.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Login.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Register.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
+C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb

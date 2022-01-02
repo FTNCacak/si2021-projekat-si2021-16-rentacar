@@ -19,7 +19,9 @@ namespace SI2021_16_RentACar
 
         private void button2_register_Click(object sender, EventArgs e)
         {
-
+            RentList rentList = new RentList();
+            this.Hide();
+            rentList.Show();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -50,6 +52,32 @@ namespace SI2021_16_RentACar
         private void label1_mainmenu_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void Menu_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button2_tos_Click(object sender, EventArgs e)
+        {
+            TermsOfService tos = new TermsOfService();
+            this.Hide();
+            tos.Show();
+        }
+
+        private void button3_info_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            this.Hide();
+            info.Show();
+        }
+
+        private void button4_logout_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            this.Hide();
+            login.Show();
         }
     }
 }

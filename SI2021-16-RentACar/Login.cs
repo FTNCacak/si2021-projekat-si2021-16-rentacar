@@ -41,5 +41,24 @@ namespace SI2021_16_RentACar
         {
 
         }
+
+        private void button2_register_Click(object sender, EventArgs e)
+        {
+            Register register = new Register();
+            this.Hide();
+            register.Show();
+        }
+
+        private void button1_login_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Hide();
+            menu.Show();
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -101,7 +101,7 @@
             this.label3_ajs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.label3_ajs.Location = new System.Drawing.Point(787, 5);
             this.label3_ajs.Name = "label3_ajs";
-            this.label3_ajs.Size = new System.Drawing.Size(145, 88);
+            this.label3_ajs.Size = new System.Drawing.Size(146, 88);
             this.label3_ajs.TabIndex = 28;
             this.label3_ajs.Text = "AJS";
             // 
@@ -170,6 +170,7 @@
             this.button1_next.TabIndex = 38;
             this.button1_next.Text = "Next";
             this.button1_next.UseVisualStyleBackColor = false;
+            this.button1_next.Click += new System.EventHandler(this.button1_next_Click);
             // 
             // button2_back
             // 
@@ -183,6 +184,7 @@
             this.button2_back.TabIndex = 39;
             this.button2_back.Text = "Back";
             this.button2_back.UseVisualStyleBackColor = false;
+            this.button2_back.Click += new System.EventHandler(this.button2_back_Click);
             // 
             // textBox4_upin
             // 
@@ -397,7 +399,9 @@
             this.Controls.Add(this.panel1_under);
             this.Controls.Add(this.panel2_upper);
             this.Name = "Rent";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Rent_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2_upper.ResumeLayout(false);
             this.panel2_upper.PerformLayout();

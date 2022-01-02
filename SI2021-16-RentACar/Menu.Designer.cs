@@ -94,6 +94,7 @@
             this.button2_tos.TabIndex = 25;
             this.button2_tos.Text = "Terms of service";
             this.button2_tos.UseVisualStyleBackColor = false;
+            this.button2_tos.Click += new System.EventHandler(this.button2_tos_Click);
             // 
             // button3_info
             // 
@@ -107,6 +108,7 @@
             this.button3_info.TabIndex = 26;
             this.button3_info.Text = "Info";
             this.button3_info.UseVisualStyleBackColor = false;
+            this.button3_info.Click += new System.EventHandler(this.button3_info_Click);
             // 
             // button4_logout
             // 
@@ -120,6 +122,7 @@
             this.button4_logout.TabIndex = 27;
             this.button4_logout.Text = "Logout";
             this.button4_logout.UseVisualStyleBackColor = false;
+            this.button4_logout.Click += new System.EventHandler(this.button4_logout_Click);
             // 
             // label3_ajs
             // 
@@ -128,7 +131,7 @@
             this.label3_ajs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.label3_ajs.Location = new System.Drawing.Point(787, 5);
             this.label3_ajs.Name = "label3_ajs";
-            this.label3_ajs.Size = new System.Drawing.Size(145, 88);
+            this.label3_ajs.Size = new System.Drawing.Size(146, 88);
             this.label3_ajs.TabIndex = 28;
             this.label3_ajs.Text = "AJS";
             this.label3_ajs.Click += new System.EventHandler(this.label1_Click);
@@ -200,7 +203,9 @@
             this.Controls.Add(this.button1_rent);
             this.Controls.Add(this.panel1_under);
             this.Name = "Menu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
             this.panel1_under.ResumeLayout(false);
             this.panel1_under.PerformLayout();
             this.panel2_upper.ResumeLayout(false);

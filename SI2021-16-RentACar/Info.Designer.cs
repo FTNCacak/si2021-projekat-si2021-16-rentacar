@@ -127,6 +127,7 @@
             this.button1_back.TabIndex = 39;
             this.button1_back.Text = "Back";
             this.button1_back.UseVisualStyleBackColor = false;
+            this.button1_back.Click += new System.EventHandler(this.button1_back_Click);
             // 
             // Info
             // 
@@ -139,7 +140,9 @@
             this.Controls.Add(this.richTextBox1_cartext);
             this.Controls.Add(this.panel1_upper);
             this.Name = "Info";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Info_FormClosed);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
             this.panel2.ResumeLayout(false);

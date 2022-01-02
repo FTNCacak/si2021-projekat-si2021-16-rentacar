@@ -155,6 +155,7 @@
             this.button1_login.TabIndex = 14;
             this.button1_login.Text = "Login";
             this.button1_login.UseVisualStyleBackColor = false;
+            this.button1_login.Click += new System.EventHandler(this.button1_login_Click);
             // 
             // button2_register
             // 
@@ -168,6 +169,7 @@
             this.button2_register.TabIndex = 15;
             this.button2_register.Text = "Register";
             this.button2_register.UseVisualStyleBackColor = false;
+            this.button2_register.Click += new System.EventHandler(this.button2_register_Click);
             // 
             // Login
             // 
@@ -184,7 +186,9 @@
             this.Controls.Add(this.label2_password);
             this.Controls.Add(this.label1_userID);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.panel1_login.ResumeLayout(false);
             this.panel1_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

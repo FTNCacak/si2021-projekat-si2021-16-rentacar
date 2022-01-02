@@ -103,6 +103,7 @@
             this.button1_finish.TabIndex = 26;
             this.button1_finish.Text = "Finish";
             this.button1_finish.UseVisualStyleBackColor = false;
+            this.button1_finish.Click += new System.EventHandler(this.button1_finish_Click);
             // 
             // richTextBox1_cartext
             // 
@@ -125,7 +126,9 @@
             this.Controls.Add(this.panel2_down);
             this.Controls.Add(this.panel1_upper);
             this.Name = "Confirmation";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Confirmation_FormClosed);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
             this.panel2_down.ResumeLayout(false);

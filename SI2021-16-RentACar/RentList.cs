@@ -21,5 +21,24 @@ namespace SI2021_16_RentACar
         {
 
         }
+
+        private void RentList_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_next_Click(object sender, EventArgs e)
+        {
+            Rent rent = new Rent();
+            this.Hide();
+            rent.Show();
+        }
+
+        private void button2_back_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Hide();
+            menu.Show();
+        }
     }
 }

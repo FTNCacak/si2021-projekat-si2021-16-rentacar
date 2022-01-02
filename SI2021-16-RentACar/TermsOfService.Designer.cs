@@ -142,6 +142,7 @@
             this.button1_back.TabIndex = 36;
             this.button1_back.Text = "Back";
             this.button1_back.UseVisualStyleBackColor = false;
+            this.button1_back.Click += new System.EventHandler(this.button1_back_Click);
             // 
             // TermsOfService
             // 
@@ -154,7 +155,9 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "TermsOfService";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TermsOfService_FormClosed);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);

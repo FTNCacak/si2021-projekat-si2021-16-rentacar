@@ -45,6 +45,7 @@
             this.textBox4_password = new System.Windows.Forms.TextBox();
             this.textBox5_email = new System.Windows.Forms.TextBox();
             this.label3_email = new System.Windows.Forms.Label();
+            this.button3_back = new System.Windows.Forms.Button();
             this.panel1_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -61,6 +62,7 @@
             this.button2_register.TabIndex = 23;
             this.button2_register.Text = "Register";
             this.button2_register.UseVisualStyleBackColor = false;
+            this.button2_register.Click += new System.EventHandler(this.button2_register_Click);
             // 
             // textBox2_name
             // 
@@ -226,12 +228,27 @@
             this.label3_email.TabIndex = 28;
             this.label3_email.Text = "E-mail:";
             // 
+            // button3_back
+            // 
+            this.button3_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.button3_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3_back.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.button3_back.Location = new System.Drawing.Point(29, 340);
+            this.button3_back.Name = "button3_back";
+            this.button3_back.Size = new System.Drawing.Size(166, 44);
+            this.button3_back.TabIndex = 23;
+            this.button3_back.Text = "Back";
+            this.button3_back.UseVisualStyleBackColor = false;
+            this.button3_back.Click += new System.EventHandler(this.button3_back_Click);
+            // 
             // Register
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(816, 410);
+            this.Controls.Add(this.button3_back);
             this.Controls.Add(this.textBox5_email);
             this.Controls.Add(this.label3_email);
             this.Controls.Add(this.button2_register);
@@ -246,7 +263,9 @@
             this.Controls.Add(this.label2_register);
             this.Controls.Add(this.label1_userID);
             this.Name = "Register";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);
             this.panel1_login.ResumeLayout(false);
             this.panel1_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -273,5 +292,6 @@
         private System.Windows.Forms.TextBox textBox4_password;
         private System.Windows.Forms.TextBox textBox5_email;
         private System.Windows.Forms.Label label3_email;
+        private System.Windows.Forms.Button button3_back;
     }
 }

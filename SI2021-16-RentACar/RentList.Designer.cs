@@ -118,6 +118,7 @@
             this.button1_next.TabIndex = 25;
             this.button1_next.Text = "Next";
             this.button1_next.UseVisualStyleBackColor = false;
+            this.button1_next.Click += new System.EventHandler(this.button1_next_Click);
             // 
             // button2_back
             // 
@@ -131,6 +132,7 @@
             this.button2_back.TabIndex = 26;
             this.button2_back.Text = "Back";
             this.button2_back.UseVisualStyleBackColor = false;
+            this.button2_back.Click += new System.EventHandler(this.button2_back_Click);
             // 
             // label3_email
             // 
@@ -178,7 +180,9 @@
             this.Controls.Add(this.panel1_upper);
             this.Controls.Add(this.listBox1_rentacarlist);
             this.Name = "RentList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RentList_FormClosed);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
             this.panel2_down.ResumeLayout(false);

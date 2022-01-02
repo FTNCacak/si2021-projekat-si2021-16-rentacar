@@ -21,5 +21,17 @@ namespace SI2021_16_RentACar
         {
 
         }
+
+        private void Info_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void button1_back_Click(object sender, EventArgs e)
+        {
+            Menu menu = new Menu();
+            this.Hide();
+            menu.Show();
+        }
     }
 }
