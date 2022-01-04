@@ -74,6 +74,7 @@
             this.textBox2_name.Name = "textBox2_name";
             this.textBox2_name.Size = new System.Drawing.Size(220, 15);
             this.textBox2_name.TabIndex = 21;
+            this.textBox2_name.TextChanged += new System.EventHandler(this.textBox2_name_TextChanged);
             // 
             // textBox1_userID
             // 
@@ -85,6 +86,7 @@
             this.textBox1_userID.Name = "textBox1_userID";
             this.textBox1_userID.Size = new System.Drawing.Size(220, 15);
             this.textBox1_userID.TabIndex = 20;
+            this.textBox1_userID.TextChanged += new System.EventHandler(this.textBox1_userID_TextChanged);
             // 
             // panel1_login
             // 
@@ -194,6 +196,7 @@
             this.textBox3_surname.Name = "textBox3_surname";
             this.textBox3_surname.Size = new System.Drawing.Size(220, 15);
             this.textBox3_surname.TabIndex = 26;
+            this.textBox3_surname.TextChanged += new System.EventHandler(this.textBox3_surname_TextChanged);
             // 
             // textBox4_password
             // 
@@ -205,6 +208,7 @@
             this.textBox4_password.Name = "textBox4_password";
             this.textBox4_password.Size = new System.Drawing.Size(220, 15);
             this.textBox4_password.TabIndex = 27;
+            this.textBox4_password.TextChanged += new System.EventHandler(this.textBox4_password_TextChanged);
             // 
             // textBox5_email
             // 
@@ -216,6 +220,7 @@
             this.textBox5_email.Name = "textBox5_email";
             this.textBox5_email.Size = new System.Drawing.Size(220, 15);
             this.textBox5_email.TabIndex = 29;
+            this.textBox5_email.TextChanged += new System.EventHandler(this.textBox5_email_TextChanged);
             // 
             // label3_email
             // 
@@ -262,10 +267,12 @@
             this.Controls.Add(this.label3_name);
             this.Controls.Add(this.label2_register);
             this.Controls.Add(this.label1_userID);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Register_FormClosed);
+            this.Load += new System.EventHandler(this.Register_Load);
             this.panel1_login.ResumeLayout(false);
             this.panel1_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

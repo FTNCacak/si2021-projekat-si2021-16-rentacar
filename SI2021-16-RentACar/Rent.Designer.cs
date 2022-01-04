@@ -52,14 +52,13 @@
             this.textBox8_price = new System.Windows.Forms.TextBox();
             this.label5_number = new System.Windows.Forms.Label();
             this.textBox5_number = new System.Windows.Forms.TextBox();
-            this.textBox1_startdate = new System.Windows.Forms.TextBox();
-            this.label2_enddate = new System.Windows.Forms.Label();
-            this.textBox2_enddate = new System.Windows.Forms.TextBox();
             this.label3_upin = new System.Windows.Forms.Label();
             this.textBox3_upin = new System.Windows.Forms.TextBox();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2_upper.SuspendLayout();
             this.panel1_under.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox2
@@ -101,7 +100,7 @@
             this.label3_ajs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.label3_ajs.Location = new System.Drawing.Point(787, 5);
             this.label3_ajs.Name = "label3_ajs";
-            this.label3_ajs.Size = new System.Drawing.Size(146, 88);
+            this.label3_ajs.Size = new System.Drawing.Size(145, 88);
             this.label3_ajs.TabIndex = 28;
             this.label3_ajs.Text = "AJS";
             // 
@@ -195,6 +194,7 @@
             this.textBox4_upin.Name = "textBox4_upin";
             this.textBox4_upin.Size = new System.Drawing.Size(177, 13);
             this.textBox4_upin.TabIndex = 44;
+            this.textBox4_upin.TextChanged += new System.EventHandler(this.textBox4_upin_TextChanged);
             // 
             // label6_carid
             // 
@@ -212,18 +212,19 @@
             this.label8_startdate.AutoSize = true;
             this.label8_startdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label8_startdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label8_startdate.Location = new System.Drawing.Point(21, 189);
+            this.label8_startdate.Location = new System.Drawing.Point(21, 216);
             this.label8_startdate.Name = "label8_startdate";
-            this.label8_startdate.Size = new System.Drawing.Size(106, 20);
+            this.label8_startdate.Size = new System.Drawing.Size(40, 20);
             this.label8_startdate.TabIndex = 46;
-            this.label8_startdate.Text = "Starting Date:";
+            this.label8_startdate.Text = "Day:";
+            this.label8_startdate.Click += new System.EventHandler(this.label8_startdate_Click);
             // 
             // label7_amount
             // 
             this.label7_amount.AutoSize = true;
             this.label7_amount.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label7_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label7_amount.Location = new System.Drawing.Point(320, 157);
+            this.label7_amount.Location = new System.Drawing.Point(320, 153);
             this.label7_amount.Name = "label7_amount";
             this.label7_amount.Size = new System.Drawing.Size(71, 20);
             this.label7_amount.TabIndex = 47;
@@ -235,7 +236,7 @@
             this.button1_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_delete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1_delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1_delete.Location = new System.Drawing.Point(493, 267);
+            this.button1_delete.Location = new System.Drawing.Point(493, 251);
             this.button1_delete.Name = "button1_delete";
             this.button1_delete.Size = new System.Drawing.Size(93, 33);
             this.button1_delete.TabIndex = 48;
@@ -248,12 +249,13 @@
             this.button2_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2_add.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button2_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_add.Location = new System.Drawing.Point(324, 267);
+            this.button2_add.Location = new System.Drawing.Point(324, 251);
             this.button2_add.Name = "button2_add";
             this.button2_add.Size = new System.Drawing.Size(93, 33);
             this.button2_add.TabIndex = 49;
             this.button2_add.Text = "Add";
             this.button2_add.UseVisualStyleBackColor = false;
+            this.button2_add.Click += new System.EventHandler(this.button2_add_Click);
             // 
             // textBox6_carid
             // 
@@ -264,13 +266,14 @@
             this.textBox6_carid.Name = "textBox6_carid";
             this.textBox6_carid.Size = new System.Drawing.Size(177, 13);
             this.textBox6_carid.TabIndex = 50;
+            this.textBox6_carid.TextChanged += new System.EventHandler(this.textBox6_carid_TextChanged);
             // 
             // textBox7_amount
             // 
             this.textBox7_amount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox7_amount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox7_amount.Location = new System.Drawing.Point(409, 162);
+            this.textBox7_amount.Location = new System.Drawing.Point(409, 158);
             this.textBox7_amount.Name = "textBox7_amount";
             this.textBox7_amount.Size = new System.Drawing.Size(177, 13);
             this.textBox7_amount.TabIndex = 51;
@@ -280,7 +283,7 @@
             this.label9_price.AutoSize = true;
             this.label9_price.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label9_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label9_price.Location = new System.Drawing.Point(320, 219);
+            this.label9_price.Location = new System.Drawing.Point(320, 184);
             this.label9_price.Name = "label9_price";
             this.label9_price.Size = new System.Drawing.Size(47, 20);
             this.label9_price.TabIndex = 53;
@@ -291,10 +294,11 @@
             this.textBox8_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox8_price.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox8_price.Location = new System.Drawing.Point(409, 226);
+            this.textBox8_price.Location = new System.Drawing.Point(409, 191);
             this.textBox8_price.Name = "textBox8_price";
             this.textBox8_price.Size = new System.Drawing.Size(177, 13);
             this.textBox8_price.TabIndex = 54;
+            this.textBox8_price.TextChanged += new System.EventHandler(this.textBox8_price_TextChanged);
             // 
             // label5_number
             // 
@@ -317,43 +321,12 @@
             this.textBox5_number.Size = new System.Drawing.Size(177, 13);
             this.textBox5_number.TabIndex = 57;
             // 
-            // textBox1_startdate
-            // 
-            this.textBox1_startdate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.textBox1_startdate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1_startdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox1_startdate.Location = new System.Drawing.Point(133, 194);
-            this.textBox1_startdate.Name = "textBox1_startdate";
-            this.textBox1_startdate.Size = new System.Drawing.Size(157, 13);
-            this.textBox1_startdate.TabIndex = 58;
-            // 
-            // label2_enddate
-            // 
-            this.label2_enddate.AutoSize = true;
-            this.label2_enddate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.label2_enddate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label2_enddate.Location = new System.Drawing.Point(320, 189);
-            this.label2_enddate.Name = "label2_enddate";
-            this.label2_enddate.Size = new System.Drawing.Size(98, 20);
-            this.label2_enddate.TabIndex = 59;
-            this.label2_enddate.Text = "Ending Date:";
-            // 
-            // textBox2_enddate
-            // 
-            this.textBox2_enddate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.textBox2_enddate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2_enddate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox2_enddate.Location = new System.Drawing.Point(424, 194);
-            this.textBox2_enddate.Name = "textBox2_enddate";
-            this.textBox2_enddate.Size = new System.Drawing.Size(162, 13);
-            this.textBox2_enddate.TabIndex = 60;
-            // 
             // label3_upin
             // 
             this.label3_upin.AutoSize = true;
             this.label3_upin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_upin.Location = new System.Drawing.Point(21, 221);
+            this.label3_upin.Location = new System.Drawing.Point(21, 184);
             this.label3_upin.Name = "label3_upin";
             this.label3_upin.Size = new System.Drawing.Size(50, 20);
             this.label3_upin.TabIndex = 61;
@@ -364,22 +337,46 @@
             this.textBox3_upin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox3_upin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox3_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox3_upin.Location = new System.Drawing.Point(113, 226);
+            this.textBox3_upin.Location = new System.Drawing.Point(113, 189);
             this.textBox3_upin.Name = "textBox3_upin";
             this.textBox3_upin.Size = new System.Drawing.Size(177, 13);
             this.textBox3_upin.TabIndex = 62;
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.numericUpDown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
+            this.numericUpDown1.Location = new System.Drawing.Point(113, 216);
+            this.numericUpDown1.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(177, 20);
+            this.numericUpDown1.TabIndex = 64;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // Rent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(933, 524);
+            this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.textBox3_upin);
             this.Controls.Add(this.label3_upin);
-            this.Controls.Add(this.textBox2_enddate);
-            this.Controls.Add(this.label2_enddate);
-            this.Controls.Add(this.textBox1_startdate);
             this.Controls.Add(this.textBox5_number);
             this.Controls.Add(this.label5_number);
             this.Controls.Add(this.textBox8_price);
@@ -402,11 +399,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Rent_FormClosed);
+            this.Load += new System.EventHandler(this.Rent_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2_upper.ResumeLayout(false);
             this.panel2_upper.PerformLayout();
             this.panel1_under.ResumeLayout(false);
             this.panel1_under.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -437,10 +436,8 @@
         private System.Windows.Forms.TextBox textBox8_price;
         private System.Windows.Forms.Label label5_number;
         private System.Windows.Forms.TextBox textBox5_number;
-        private System.Windows.Forms.TextBox textBox1_startdate;
-        private System.Windows.Forms.Label label2_enddate;
-        private System.Windows.Forms.TextBox textBox2_enddate;
         private System.Windows.Forms.Label label3_upin;
         private System.Windows.Forms.TextBox textBox3_upin;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }

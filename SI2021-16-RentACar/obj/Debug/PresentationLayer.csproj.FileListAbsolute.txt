@@ -32,3 +32,65 @@ C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-
 C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
 C:\Users\jovic\Desktop\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe.config
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.pdb
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Info.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Menu.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Properties.Resources.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Login.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Register.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
+C:\Users\mjedor\Desktop\RaC\si2021-projekat-si2021-16-rentacar-development\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe.config
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\BusinessLayer.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\DataLayer.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\BusinessLayer.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\bin\Debug\DataLayer.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Info.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Menu.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Properties.Resources.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Login.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Register.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
+C:\Users\jevre\OneDrive\Radna površina\New folder\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.AssemblyReference.cache
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.SuggestedBindingRedirects.cache
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Confirmation.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Info.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Menu.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Properties.Resources.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Login.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Register.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.Rent.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.RentList.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.TermsOfService.resources
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe.config
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.exe
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\SI2021-16-RentACar.pdb
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\BusinessLayer.dll
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\DataLayer.dll
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\BusinessLayer.pdb
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\bin\Debug\DataLayer.pdb
+C:\Users\mjedor\Desktop\RaC\RentACar\New folder\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CopyComplete

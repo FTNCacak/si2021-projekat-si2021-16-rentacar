@@ -123,12 +123,14 @@
             // richTextBox1_cartext
             // 
             this.richTextBox1_cartext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.richTextBox1_cartext.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox1_cartext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
             this.richTextBox1_cartext.Location = new System.Drawing.Point(24, 101);
             this.richTextBox1_cartext.Name = "richTextBox1_cartext";
             this.richTextBox1_cartext.Size = new System.Drawing.Size(784, 265);
             this.richTextBox1_cartext.TabIndex = 35;
-            this.richTextBox1_cartext.Text = "";
+            this.richTextBox1_cartext.Text = resources.GetString("richTextBox1_cartext.Text");
+            this.richTextBox1_cartext.TextChanged += new System.EventHandler(this.richTextBox1_cartext_TextChanged);
             // 
             // button1_back
             // 
@@ -154,6 +156,7 @@
             this.Controls.Add(this.richTextBox1_cartext);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TermsOfService";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";

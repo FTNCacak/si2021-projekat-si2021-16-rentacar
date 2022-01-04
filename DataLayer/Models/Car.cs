@@ -8,13 +8,13 @@ namespace DataLayer.Models
 {
     public class Car
     {
-        public int Id_auto { get; set; }
-        public string marka { get; set; }
-        public string naziv { get; set; }
-        public bool slobodan { get; set; }
-        public decimal cena { get; set; }
-        public int godiste { get; set; }
-        public string tip_goriva { get; set; }
-        public int kolicina { get; set; }
+        public int Id_car { get; set; }
+        public string brand { get; set; }
+        public string name { get; set; }
+        public bool free { get; set; }
+        public decimal pricePD { get; set; }
+        public int year { get; set; }
+        public string fuel { get; set; }
+        public int amount { get; set; }
     }
 }

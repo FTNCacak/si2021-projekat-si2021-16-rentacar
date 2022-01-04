@@ -38,7 +38,8 @@
             this.button2_back = new System.Windows.Forms.Button();
             this.label3_email = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.richTextBox1_cartext = new System.Windows.Forms.RichTextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.listBox2_carinformation = new System.Windows.Forms.ListBox();
             this.panel1_upper.SuspendLayout();
             this.panel2_down.SuspendLayout();
             this.SuspendLayout();
@@ -152,18 +153,33 @@
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
             this.textBox1.Location = new System.Drawing.Point(94, 87);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(204, 13);
+            this.textBox1.Size = new System.Drawing.Size(87, 13);
             this.textBox1.TabIndex = 30;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // richTextBox1_cartext
+            // button1
             // 
-            this.richTextBox1_cartext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.richTextBox1_cartext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.richTextBox1_cartext.Location = new System.Drawing.Point(29, 139);
-            this.richTextBox1_cartext.Name = "richTextBox1_cartext";
-            this.richTextBox1_cartext.Size = new System.Drawing.Size(275, 327);
-            this.richTextBox1_cartext.TabIndex = 31;
-            this.richTextBox1_cartext.Text = "";
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.button1.Location = new System.Drawing.Point(211, 76);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 33);
+            this.button1.TabIndex = 32;
+            this.button1.Text = "Check";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // listBox2_carinformation
+            // 
+            this.listBox2_carinformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.listBox2_carinformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox2_carinformation.FormattingEnabled = true;
+            this.listBox2_carinformation.Location = new System.Drawing.Point(29, 139);
+            this.listBox2_carinformation.Name = "listBox2_carinformation";
+            this.listBox2_carinformation.Size = new System.Drawing.Size(276, 327);
+            this.listBox2_carinformation.TabIndex = 33;
             // 
             // RentList
             // 
@@ -171,7 +187,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(645, 568);
-            this.Controls.Add(this.richTextBox1_cartext);
+            this.Controls.Add(this.listBox2_carinformation);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3_email);
             this.Controls.Add(this.button2_back);
@@ -204,6 +221,7 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3_ajs;
         private System.Windows.Forms.Label label2_rentacar;
-        private System.Windows.Forms.RichTextBox richTextBox1_cartext;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ListBox listBox2_carinformation;
     }
 }

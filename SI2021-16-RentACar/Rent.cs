@@ -45,5 +45,40 @@ namespace SI2021_16_RentACar
             this.Hide();
             confirmation.Show();
         }
+
+        private void Rent_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label8_startdate_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_add_Click(object sender, EventArgs e)
+        {
+         
+        }
+
+        private void add(String name, String pos, String team)
+        {
+            
+        }
+
+        private void textBox4_upin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_price_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void textBox6_carid_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

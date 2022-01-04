@@ -16,7 +16,7 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO Kupac VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",b.Id_user,b.ime,b.prezime,b.adresa,b.br_telefona,b.email,b.sifra,b.jmbg);
+                sqlCommand.CommandText = string.Format("INSERT INTO Buyers VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')",b.Id_user,b.Fname,b.Lname,b.adress,b.phoneNumber,b.email,b.password,b.upin);
                 return sqlCommand.ExecuteNonQuery();
             }
         }
@@ -28,7 +28,7 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Buyer";
+                sqlCommand.CommandText = "SELECT * FROM Buyers";
 
                 sqlConnection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
@@ -36,13 +36,13 @@ namespace DataLayer
                 {
                     Buyer b = new Buyer();
                     b.Id_user = sqlDataReader.GetString(0);
-                    b.ime = sqlDataReader.GetString(1);
-                    b.prezime = sqlDataReader.GetString(2);
-                    b.adresa = sqlDataReader.GetString(3);
-                    b.br_telefona = sqlDataReader.GetString(4);
+                    b.Fname = sqlDataReader.GetString(1);
+                    b.Lname = sqlDataReader.GetString(2);
+                    b.adress = sqlDataReader.GetString(3);
+                    b.phoneNumber = sqlDataReader.GetString(4);
                     b.email = sqlDataReader.GetString(5);
-                    b.sifra = sqlDataReader.GetString(6);
-                    b.jmbg = sqlDataReader.GetString(7);
+                    b.password = sqlDataReader.GetString(6);
+                    b.upin = sqlDataReader.GetString(7);
                     kupci.Add(b);
                 }
             }

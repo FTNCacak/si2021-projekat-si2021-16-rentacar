@@ -17,15 +17,15 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Firma";
+                sqlCommand.CommandText = "SELECT * FROM Firms";
 
                 sqlConnection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 while (sqlDataReader.Read())
                 {
                     Firm f = new Firm();
-                    f.Id_firme = sqlDataReader.GetInt32(0);
-                    f.lokacija = sqlDataReader.GetString(1);
+                    f.Id_firm = sqlDataReader.GetInt32(0);
+                    f.location = sqlDataReader.GetString(1);
                     firma.Add(f);
                 }
             }

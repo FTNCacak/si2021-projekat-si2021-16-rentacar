@@ -54,6 +54,7 @@
             this.textBox2_password.Name = "textBox2_password";
             this.textBox2_password.Size = new System.Drawing.Size(220, 15);
             this.textBox2_password.TabIndex = 13;
+            this.textBox2_password.TextChanged += new System.EventHandler(this.textBox2_password_TextChanged);
             // 
             // textBox1_userID
             // 
@@ -185,10 +186,13 @@
             this.Controls.Add(this.label3_login);
             this.Controls.Add(this.label2_password);
             this.Controls.Add(this.label1_userID);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
+            this.Load += new System.EventHandler(this.Login_Load);
             this.panel1_login.ResumeLayout(false);
             this.panel1_login.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

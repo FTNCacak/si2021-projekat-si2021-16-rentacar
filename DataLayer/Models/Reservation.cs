@@ -8,9 +8,8 @@ namespace DataLayer.Models
 {
     public class Reservation
     {
-        public int Id_rezervacije { get; set; }
-        public string StartDatum { get; set; }
-        public string EndDatum { get; set; }
-        public decimal placanje { get; set; }
+        public int Id_reservation { get; set; }
+        public int days { get; set; }
+        public decimal finalPrice { get; set; }
     }
 }

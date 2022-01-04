@@ -8,7 +8,7 @@ namespace DataLayer.Models
 {
     public class Firm
     {
-        public int Id_firme { get; set; }
-        public string lokacija { get; set; }
+        public int Id_firm { get; set; }
+        public string location { get; set; }
     }
 }

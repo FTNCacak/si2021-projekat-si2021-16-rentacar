@@ -17,21 +17,21 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = "SELECT * FROM Auto";
+                sqlCommand.CommandText = "SELECT * FROM Cars";
 
                 sqlConnection.Open();
                 SqlDataReader sqlDataReader = sqlCommand.ExecuteReader();
                 while (sqlDataReader.Read())
                 {
                     Car c = new Car();
-                    c.Id_auto = sqlDataReader.GetInt32(0);
-                    c.marka = sqlDataReader.GetString(1);
-                    c.naziv = sqlDataReader.GetString(2);
-                    c.slobodan = sqlDataReader.GetBoolean(3);
-                    c.cena = sqlDataReader.GetDecimal(4);
-                    c.godiste = sqlDataReader.GetInt32(5);
-                    c.tip_goriva = sqlDataReader.GetString(6);
-                    c.kolicina = sqlDataReader.GetInt32(7);
+                    c.Id_car = sqlDataReader.GetInt32(0);
+                    c.brand = sqlDataReader.GetString(1);
+                    c.name = sqlDataReader.GetString(2);
+                    c.free = sqlDataReader.GetBoolean(3);
+                    c.pricePD = sqlDataReader.GetDecimal(4);
+                    c.year = sqlDataReader.GetInt32(5);
+                    c.fuel = sqlDataReader.GetString(6);
+                    c.amount = sqlDataReader.GetInt32(7);
                     auti.Add(c);
                 }
             }
