@@ -20,6 +20,52 @@ namespace DataLayer
                 return sqlCommand.ExecuteNonQuery();
             }
         }
+        public int RegisterBuyer(Buyer b)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                SqlCommand sqlCommand = new SqlCommand("select * from Buyers where Id_user='" + b.Id_user + "'", sqlConnection);
+                sqlCommand.Connection = sqlConnection;
+                sqlConnection.Open();
+                SqlDataReader dr = sqlCommand.ExecuteReader();
+                if (dr.Read())
+                {
+                    dr.Close();
+                    return 0;
+                }
+                else
+                {
+                    dr.Close();
+                    SqlCommand cmd = new SqlCommand("insert into Buyers(email, Id_user, Fname, Lname, password) values(@email, @Id_user, @Fname, @Lname, @password)", sqlConnection);
+                    cmd.Parameters.AddWithValue("email", b.email);
+                    cmd.Parameters.AddWithValue("Id_user", b.Id_user);
+                    cmd.Parameters.AddWithValue("Fname", b.Fname);
+                    cmd.Parameters.AddWithValue("Lname", b.Lname);
+                    cmd.Parameters.AddWithValue("password", b.password);
+                    return cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public int LogInBuyer(Buyer b)
+        {
+            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
+            {
+                SqlCommand sqlCommand = new SqlCommand("select * from Buyers where Id_user='" + b.Id_user + "' and password='" + b.password + "'");
+                sqlCommand.Connection = sqlConnection;
+                sqlConnection.Open();
+                SqlDataReader dr = sqlCommand.ExecuteReader();
+                if (dr.Read())
+                {
+                    dr.Close();
+                    return 1;
+                }
+                else
+                {
+                    dr.Close();
+                    return 0;
+                }
+            }
+        }
 
         public List<Buyer> GetAllBuyers()
         {

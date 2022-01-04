@@ -23,7 +23,8 @@ namespace SI2021_16_RentACar
             this.buyerBusiness = new BuyerBusiness();
             InitializeComponent();
         }
-      
+        SqlConnection conn = new SqlConnection();
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -58,32 +59,18 @@ namespace SI2021_16_RentACar
 
         private void button1_login_Click(object sender, EventArgs e)
         {
-            if (textBox1_userID.Text != string.Empty || textBox2_password.Text != string.Empty)
+            Buyer b = new Buyer();
+            b.Id_user = textBox1_userID.Text;
+            b.password = textBox2_password.Text;
+            if (this.buyerBusiness.LogInBuyers(b))
             {
-                using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
-                {
-                    SqlCommand sqlCommand = new SqlCommand("select * from Buyers where Id_user='" + textBox1_userID.Text + "' and password='" + textBox2_password.Text + "'", sqlConnection);
-                    sqlCommand.Connection = sqlConnection;
-                    sqlConnection.Open();
-                    SqlDataReader dr = sqlCommand.ExecuteReader();
-                    if (dr.Read())
-                    {
-                        dr.Close();
-                        this.Hide();
-                        Menu menu = new Menu();
-                        menu.ShowDialog();
-                    }
-                    else
-                    {
-                        dr.Close();
-                        MessageBox.Show("No Account avilable with this username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-
+                this.Hide();
+                Menu menu = new Menu();
+                menu.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Please enter value in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
         }

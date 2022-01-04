@@ -19,13 +19,29 @@ namespace BusinessLayer
         {
             return this.buyerRepository.GetAllBuyers();
         }
-        public bool InsertBuyer(Buyer b)
+        public bool RegisterBuyers(Buyer b)
         {
-            if(this.buyerRepository.InsertBuyer(b)>0)
+            if (this.buyerRepository.RegisterBuyer(b) > 0 && (b.email != string.Empty || b.Id_user != string.Empty || b.Fname != string.Empty || b.Lname != string.Empty
+                || b.password != string.Empty))
             {
                 return true;
             }
-            return false;
+            else
+            {
+                return false;
+            }
         }
+        public bool LogInBuyers(Buyer b)
+        {
+            if (this.buyerRepository.LogInBuyer(b) > 0 && (b.Id_user != string.Empty || b.password != string.Empty))
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

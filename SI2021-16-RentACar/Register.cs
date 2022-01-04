@@ -9,13 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using DataLayer;
+using BusinessLayer;
+using DataLayer.Models;
 
 namespace SI2021_16_RentACar
 {
     public partial class Register : Form
     {
+        private readonly BuyerBusiness buyerBusiness;
         public Register()
         {
+            this.buyerBusiness = new BuyerBusiness();
             InitializeComponent();
         }
 
@@ -38,45 +42,33 @@ namespace SI2021_16_RentACar
 
         private void button2_register_Click(object sender, EventArgs e)
         {
-            if (textBox5_email.Text != string.Empty || textBox1_userID.Text != string.Empty || textBox2_name.Text != string.Empty || textBox3_surname.Text != string.Empty
-                || textBox4_password.Text != string.Empty)
+            Buyer b = new Buyer();
+            b.email = textBox5_email.Text;
+            b.Id_user = textBox1_userID.Text;
+            b.Fname = textBox2_name.Text;
+            b.Lname = textBox3_surname.Text;
+            b.password = textBox4_password.Text;
+            if (this.buyerBusiness.RegisterBuyers(b))
             {
-                using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
-                {
-                    SqlCommand sqlCommand = new SqlCommand("select * from Buyers where Id_user='" + textBox1_userID.Text + "'", sqlConnection);
-                    sqlCommand.Connection = sqlConnection;
-                    sqlConnection.Open();
-                    SqlDataReader dr = sqlCommand.ExecuteReader();
-                    if (dr.Read())
-                    {
-                        dr.Close();
-                        MessageBox.Show("User Id already exist please try another.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                    else
-                    {
-                        dr.Close();
-                        SqlCommand cmd = new SqlCommand("insert into Buyers(email, Id_user, Fname, Lname, password) values(@email, @Id_user, @Fname, @Lname, @password)", sqlConnection);
-                        cmd.Parameters.AddWithValue("email", textBox5_email.Text);
-                        cmd.Parameters.AddWithValue("Id_user", textBox1_userID.Text);
-                        cmd.Parameters.AddWithValue("Fname", textBox2_name.Text);
-                        cmd.Parameters.AddWithValue("Lname", textBox3_surname.Text);
-                        cmd.Parameters.AddWithValue("password", textBox4_password.Text);
-                        cmd.ExecuteNonQuery();
-                        MessageBox.Show("Your account is created. Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Login login = new Login();
-                        this.Hide();
-                        login.Show();
-                    }
-                }
+                MessageBox.Show("Your account is created. Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                Login login = new Login();
+                this.Hide();
+                login.Show();
             }
             else
             {
-                MessageBox.Show("Please enter value in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please enter value in all field, if all fields are filled, please try another ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
         }
-       
+        void Clear()
+        {
+            textBox5_email.Clear();
+            textBox1_userID.Clear();
+            textBox2_name.Clear();
+            textBox3_surname.Clear();
+            textBox4_password.Clear();
+        }
+
         private void textBox5_email_TextChanged(object sender, EventArgs e)
         {
 

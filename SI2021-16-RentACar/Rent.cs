@@ -70,15 +70,5 @@ namespace SI2021_16_RentACar
         {
 
         }
-
-        private void textBox8_price_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox6_carid_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

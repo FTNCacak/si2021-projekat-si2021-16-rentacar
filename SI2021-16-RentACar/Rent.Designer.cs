@@ -266,7 +266,6 @@
             this.textBox6_carid.Name = "textBox6_carid";
             this.textBox6_carid.Size = new System.Drawing.Size(177, 13);
             this.textBox6_carid.TabIndex = 50;
-            this.textBox6_carid.TextChanged += new System.EventHandler(this.textBox6_carid_TextChanged);
             // 
             // textBox7_amount
             // 
@@ -298,7 +297,6 @@
             this.textBox8_price.Name = "textBox8_price";
             this.textBox8_price.Size = new System.Drawing.Size(177, 13);
             this.textBox8_price.TabIndex = 54;
-            this.textBox8_price.TextChanged += new System.EventHandler(this.textBox8_price_TextChanged);
             // 
             // label5_number
             // 

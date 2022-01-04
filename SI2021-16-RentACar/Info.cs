@@ -33,10 +33,5 @@ namespace SI2021_16_RentACar
             this.Hide();
             menu.Show();
         }
-
-        private void richTextBox1_cartext_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

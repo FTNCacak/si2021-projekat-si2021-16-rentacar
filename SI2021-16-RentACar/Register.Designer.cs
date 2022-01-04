@@ -267,7 +267,6 @@
             this.Controls.Add(this.label3_name);
             this.Controls.Add(this.label2_register);
             this.Controls.Add(this.label1_userID);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
