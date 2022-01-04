@@ -55,5 +55,15 @@ namespace SI2021_16_RentACar
         {
            
         }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void close_button_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

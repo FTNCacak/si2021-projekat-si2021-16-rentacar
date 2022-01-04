@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RentList));
             this.listBox1_rentacarlist = new System.Windows.Forms.ListBox();
             this.panel1_upper = new System.Windows.Forms.Panel();
             this.label2_rentacar = new System.Windows.Forms.Label();
@@ -40,8 +41,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.listBox2_carinformation = new System.Windows.Forms.ListBox();
+            this.label1_rent = new System.Windows.Forms.Label();
+            this.close_button = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1_upper.SuspendLayout();
             this.panel2_down.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // listBox1_rentacarlist
@@ -49,19 +55,23 @@
             this.listBox1_rentacarlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.listBox1_rentacarlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1_rentacarlist.FormattingEnabled = true;
-            this.listBox1_rentacarlist.Location = new System.Drawing.Point(339, 87);
+            this.listBox1_rentacarlist.Location = new System.Drawing.Point(339, 113);
             this.listBox1_rentacarlist.Name = "listBox1_rentacarlist";
-            this.listBox1_rentacarlist.Size = new System.Drawing.Size(276, 379);
+            this.listBox1_rentacarlist.Size = new System.Drawing.Size(276, 353);
             this.listBox1_rentacarlist.TabIndex = 0;
             // 
             // panel1_upper
             // 
             this.panel1_upper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1_upper.Controls.Add(this.label2);
+            this.panel1_upper.Controls.Add(this.pictureBox3);
+            this.panel1_upper.Controls.Add(this.close_button);
+            this.panel1_upper.Controls.Add(this.label1_rent);
             this.panel1_upper.Controls.Add(this.label2_rentacar);
             this.panel1_upper.Controls.Add(this.label3_ajs);
             this.panel1_upper.Location = new System.Drawing.Point(-1, -2);
             this.panel1_upper.Name = "panel1_upper";
-            this.panel1_upper.Size = new System.Drawing.Size(649, 60);
+            this.panel1_upper.Size = new System.Drawing.Size(649, 91);
             this.panel1_upper.TabIndex = 1;
             // 
             // label2_rentacar
@@ -69,7 +79,7 @@
             this.label2_rentacar.AutoSize = true;
             this.label2_rentacar.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Bold);
             this.label2_rentacar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label2_rentacar.Location = new System.Drawing.Point(234, 5);
+            this.label2_rentacar.Location = new System.Drawing.Point(238, 6);
             this.label2_rentacar.Name = "label2_rentacar";
             this.label2_rentacar.Size = new System.Drawing.Size(173, 42);
             this.label2_rentacar.TabIndex = 33;
@@ -80,7 +90,7 @@
             this.label3_ajs.AutoSize = true;
             this.label3_ajs.Font = new System.Drawing.Font("Pristina", 35F);
             this.label3_ajs.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label3_ajs.Location = new System.Drawing.Point(542, 5);
+            this.label3_ajs.Location = new System.Drawing.Point(503, 21);
             this.label3_ajs.Name = "label3_ajs";
             this.label3_ajs.Size = new System.Drawing.Size(104, 61);
             this.label3_ajs.TabIndex = 29;
@@ -90,9 +100,9 @@
             // 
             this.panel2_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.panel2_down.Controls.Add(this.label1_ajs_soft);
-            this.panel2_down.Location = new System.Drawing.Point(-1, 533);
+            this.panel2_down.Location = new System.Drawing.Point(-1, 540);
             this.panel2_down.Name = "panel2_down";
-            this.panel2_down.Size = new System.Drawing.Size(649, 43);
+            this.panel2_down.Size = new System.Drawing.Size(649, 36);
             this.panel2_down.TabIndex = 2;
             // 
             // label1_ajs_soft
@@ -100,7 +110,7 @@
             this.label1_ajs_soft.AutoSize = true;
             this.label1_ajs_soft.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1_ajs_soft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label1_ajs_soft.Location = new System.Drawing.Point(265, 9);
+            this.label1_ajs_soft.Location = new System.Drawing.Point(265, 5);
             this.label1_ajs_soft.Name = "label1_ajs_soft";
             this.label1_ajs_soft.Size = new System.Drawing.Size(107, 17);
             this.label1_ajs_soft.TabIndex = 3;
@@ -140,7 +150,7 @@
             this.label3_email.AutoSize = true;
             this.label3_email.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_email.Location = new System.Drawing.Point(19, 82);
+            this.label3_email.Location = new System.Drawing.Point(25, 113);
             this.label3_email.Name = "label3_email";
             this.label3_email.Size = new System.Drawing.Size(56, 20);
             this.label3_email.TabIndex = 29;
@@ -151,7 +161,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox1.Location = new System.Drawing.Point(94, 87);
+            this.textBox1.Location = new System.Drawing.Point(100, 118);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(87, 13);
             this.textBox1.TabIndex = 30;
@@ -163,7 +173,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1.Location = new System.Drawing.Point(211, 76);
+            this.button1.Location = new System.Drawing.Point(217, 107);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 32;
@@ -176,10 +186,54 @@
             this.listBox2_carinformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.listBox2_carinformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox2_carinformation.FormattingEnabled = true;
-            this.listBox2_carinformation.Location = new System.Drawing.Point(29, 139);
+            this.listBox2_carinformation.Location = new System.Drawing.Point(29, 178);
             this.listBox2_carinformation.Name = "listBox2_carinformation";
-            this.listBox2_carinformation.Size = new System.Drawing.Size(276, 327);
+            this.listBox2_carinformation.Size = new System.Drawing.Size(276, 288);
             this.listBox2_carinformation.TabIndex = 33;
+            // 
+            // label1_rent
+            // 
+            this.label1_rent.AutoSize = true;
+            this.label1_rent.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.label1_rent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label1_rent.Location = new System.Drawing.Point(278, 57);
+            this.label1_rent.Name = "label1_rent";
+            this.label1_rent.Size = new System.Drawing.Size(88, 25);
+            this.label1_rent.TabIndex = 34;
+            this.label1_rent.Text = "Rent List";
+            // 
+            // close_button
+            // 
+            this.close_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.close_button.FlatAppearance.BorderSize = 0;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
+            this.close_button.Location = new System.Drawing.Point(617, 0);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.TabIndex = 36;
+            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label2.Location = new System.Drawing.Point(27, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 15);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Rent a Car - AJS";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
             // 
             // RentList
             // 
@@ -196,6 +250,8 @@
             this.Controls.Add(this.panel2_down);
             this.Controls.Add(this.panel1_upper);
             this.Controls.Add(this.listBox1_rentacarlist);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RentList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
@@ -204,6 +260,7 @@
             this.panel1_upper.PerformLayout();
             this.panel2_down.ResumeLayout(false);
             this.panel2_down.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,5 +280,9 @@
         private System.Windows.Forms.Label label2_rentacar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox listBox2_carinformation;
+        private System.Windows.Forms.Label label1_rent;
+        private System.Windows.Forms.Button close_button;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }

@@ -103,5 +103,20 @@ namespace SI2021_16_RentACar
         {
 
         }
+
+        private void label1_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

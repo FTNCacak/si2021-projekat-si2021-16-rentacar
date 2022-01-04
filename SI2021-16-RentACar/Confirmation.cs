@@ -28,5 +28,15 @@ namespace SI2021_16_RentACar
             this.Hide();
             menu.Show();
         }
+
+        private void label3_ajssoft_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

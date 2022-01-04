@@ -80,5 +80,20 @@ namespace SI2021_16_RentACar
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void label2_rentacar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -117,6 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="close_button.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAOhJREFUOE99
+        0rtuwkAQhWGaUBKFlCRCCRUCCiSUSIiOPpESXtdPwwPQoXAR5j8rjzU7WSi+wrPnjC3bnd22qp0vaHbP
+        FG1HA7/ggjViySyxx80FcoKCsbxBzKYFCseDMz5h5Xcc4DNHjCzw0ww9LZnj2c28dANbIAv8oRSOlE09
+        v0BeUCp4H2g7vmxGKBXlF1k+u2iMUSrLG7J8dgF9Eb3dUtl8o+348q23XdJHtuAV8TuLHln/QJzbWVrw
+        6IZGn/MBdoMZYkZWOiwdDGBlM8S/bGlBD7FsJsh+Ng19+amu0+yeLpp8VV8BD5IdjelckbMAAAAASUVO
+        RK5CYII=
+</value>
+  </data>
+  <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        vAAADrwBlbxySQAAAIhJREFUOE+tkosNgCAMRB3N0VyMMIwDOAL2TDFn5fzhJS9quR4lMlQtc8pGCaA2
+        ukXLjbGZ0SG2WJvxnOibyW4/i0yTl7jGtKcgw7YLjFRj9g0OahgV3QHyCHd/oCID1JlbXIb0TQJh0cBd
+        AHhX0+mQKJhD8+eQ1i19HgJZA0I4oPjSO/0YkMoK0njWdj1lNzcAAAAASUVORK5CYII=
+</value>
+  </data>
   <data name="richTextBox1_cartext.Text" xml:space="preserve">
     <value>                                                                     - Rent a Car - AJS -
 
@@ -136,7 +155,6 @@ Because we bring you unbeatable value and peace of mind throughout your rental c
 Email address - racajs@ajs.com
 Numbers - 011 551 551</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAYAAAAAAAEAIAAzBAAAZgAAAICAAAABACAAKAgBAJkEAABAQAAAAQAgAChCAADBDAEAMDAAAAEA
