@@ -40,6 +40,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.button1_back = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.panel1_upper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel2.SuspendLayout();
@@ -172,12 +174,30 @@
             this.button1_back.UseVisualStyleBackColor = false;
             this.button1_back.Click += new System.EventHandler(this.button1_back_Click);
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1.Location = new System.Drawing.Point(-9, 73);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(11, 510);
+            this.panel1.TabIndex = 40;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel3.Location = new System.Drawing.Point(568, 73);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(20, 510);
+            this.panel3.TabIndex = 41;
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(571, 595);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1_back);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.richTextBox1_cartext);
@@ -210,5 +230,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Button close_button;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
     }
 }

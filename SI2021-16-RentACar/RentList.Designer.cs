@@ -29,8 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RentList));
-            this.listBox1_rentacarlist = new System.Windows.Forms.ListBox();
             this.panel1_upper = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label1_rent = new System.Windows.Forms.Label();
             this.label2_rentacar = new System.Windows.Forms.Label();
             this.label3_ajs = new System.Windows.Forms.Label();
             this.panel2_down = new System.Windows.Forms.Panel();
@@ -40,32 +42,22 @@
             this.label3_email = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.listBox2_carinformation = new System.Windows.Forms.ListBox();
-            this.label1_rent = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.close_button = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1_upper.SuspendLayout();
-            this.panel2_down.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.panel2_down.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // listBox1_rentacarlist
-            // 
-            this.listBox1_rentacarlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.listBox1_rentacarlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox1_rentacarlist.FormattingEnabled = true;
-            this.listBox1_rentacarlist.Location = new System.Drawing.Point(339, 113);
-            this.listBox1_rentacarlist.Name = "listBox1_rentacarlist";
-            this.listBox1_rentacarlist.Size = new System.Drawing.Size(276, 353);
-            this.listBox1_rentacarlist.TabIndex = 0;
             // 
             // panel1_upper
             // 
             this.panel1_upper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1_upper.Controls.Add(this.close_button);
             this.panel1_upper.Controls.Add(this.label2);
             this.panel1_upper.Controls.Add(this.pictureBox3);
-            this.panel1_upper.Controls.Add(this.close_button);
             this.panel1_upper.Controls.Add(this.label1_rent);
             this.panel1_upper.Controls.Add(this.label2_rentacar);
             this.panel1_upper.Controls.Add(this.label3_ajs);
@@ -73,6 +65,38 @@
             this.panel1_upper.Name = "panel1_upper";
             this.panel1_upper.Size = new System.Drawing.Size(649, 91);
             this.panel1_upper.TabIndex = 1;
+            this.panel1_upper.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_upper_Paint);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label2.Location = new System.Drawing.Point(27, 6);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(95, 15);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Rent a Car - AJS";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.TabIndex = 38;
+            this.pictureBox3.TabStop = false;
+            // 
+            // label1_rent
+            // 
+            this.label1_rent.AutoSize = true;
+            this.label1_rent.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
+            this.label1_rent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label1_rent.Location = new System.Drawing.Point(278, 57);
+            this.label1_rent.Name = "label1_rent";
+            this.label1_rent.Size = new System.Drawing.Size(88, 25);
+            this.label1_rent.TabIndex = 34;
+            this.label1_rent.Text = "Rent List";
             // 
             // label2_rentacar
             // 
@@ -150,7 +174,7 @@
             this.label3_email.AutoSize = true;
             this.label3_email.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_email.Location = new System.Drawing.Point(25, 113);
+            this.label3_email.Location = new System.Drawing.Point(26, 121);
             this.label3_email.Name = "label3_email";
             this.label3_email.Size = new System.Drawing.Size(56, 20);
             this.label3_email.TabIndex = 29;
@@ -161,7 +185,7 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox1.Location = new System.Drawing.Point(100, 118);
+            this.textBox1.Location = new System.Drawing.Point(88, 126);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(87, 13);
             this.textBox1.TabIndex = 30;
@@ -173,7 +197,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1.Location = new System.Drawing.Point(217, 107);
+            this.button1.Location = new System.Drawing.Point(201, 115);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 32;
@@ -181,26 +205,33 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listBox2_carinformation
+            // panel1
             // 
-            this.listBox2_carinformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.listBox2_carinformation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.listBox2_carinformation.FormattingEnabled = true;
-            this.listBox2_carinformation.Location = new System.Drawing.Point(29, 178);
-            this.listBox2_carinformation.Name = "listBox2_carinformation";
-            this.listBox2_carinformation.Size = new System.Drawing.Size(276, 288);
-            this.listBox2_carinformation.TabIndex = 33;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1.Location = new System.Drawing.Point(-9, 23);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(12, 533);
+            this.panel1.TabIndex = 67;
             // 
-            // label1_rent
+            // panel2
             // 
-            this.label1_rent.AutoSize = true;
-            this.label1_rent.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.label1_rent.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label1_rent.Location = new System.Drawing.Point(278, 57);
-            this.label1_rent.Name = "label1_rent";
-            this.label1_rent.Size = new System.Drawing.Size(88, 25);
-            this.label1_rent.TabIndex = 34;
-            this.label1_rent.Text = "Rent List";
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel2.Location = new System.Drawing.Point(642, 83);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(21, 460);
+            this.panel2.TabIndex = 68;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.dataGridView1.Location = new System.Drawing.Point(29, 167);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(586, 299);
+            this.dataGridView1.TabIndex = 69;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // close_button
             // 
@@ -208,32 +239,12 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(617, 0);
+            this.close_button.Location = new System.Drawing.Point(620, 0);
             this.close_button.Name = "close_button";
             this.close_button.Size = new System.Drawing.Size(29, 23);
-            this.close_button.TabIndex = 36;
+            this.close_button.TabIndex = 40;
             this.close_button.UseVisualStyleBackColor = true;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label2.Location = new System.Drawing.Point(27, 6);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(95, 15);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "Rent a Car - AJS";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
-            this.pictureBox3.TabIndex = 38;
-            this.pictureBox3.TabStop = false;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click_2);
             // 
             // RentList
             // 
@@ -241,7 +252,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(645, 568);
-            this.Controls.Add(this.listBox2_carinformation);
+            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3_email);
@@ -249,26 +262,25 @@
             this.Controls.Add(this.button1_next);
             this.Controls.Add(this.panel2_down);
             this.Controls.Add(this.panel1_upper);
-            this.Controls.Add(this.listBox1_rentacarlist);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "RentList";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.RentList_FormClosed);
+            this.Load += new System.EventHandler(this.RentList_Load);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2_down.ResumeLayout(false);
             this.panel2_down.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox listBox1_rentacarlist;
         private System.Windows.Forms.Panel panel1_upper;
         private System.Windows.Forms.Panel panel2_down;
         private System.Windows.Forms.Label label1_ajs_soft;
@@ -279,10 +291,12 @@
         private System.Windows.Forms.Label label3_ajs;
         private System.Windows.Forms.Label label2_rentacar;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.ListBox listBox2_carinformation;
         private System.Windows.Forms.Label label1_rent;
-        private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Button close_button;
     }
 }

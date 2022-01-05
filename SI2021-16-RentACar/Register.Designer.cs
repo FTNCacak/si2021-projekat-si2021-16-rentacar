@@ -64,7 +64,7 @@
             this.button2_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2_register.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_register.Location = new System.Drawing.Point(246, 340);
+            this.button2_register.Location = new System.Drawing.Point(237, 340);
             this.button2_register.Name = "button2_register";
             this.button2_register.Size = new System.Drawing.Size(166, 44);
             this.button2_register.TabIndex = 23;
@@ -247,7 +247,7 @@
             this.button3_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3_back.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button3_back.Location = new System.Drawing.Point(29, 340);
+            this.button3_back.Location = new System.Drawing.Point(27, 340);
             this.button3_back.Name = "button3_back";
             this.button3_back.Size = new System.Drawing.Size(166, 44);
             this.button3_back.TabIndex = 23;
@@ -302,9 +302,9 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.panel3.Location = new System.Drawing.Point(-1, 438);
+            this.panel3.Location = new System.Drawing.Point(-1, 437);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(444, 20);
+            this.panel3.Size = new System.Drawing.Size(444, 21);
             this.panel3.TabIndex = 20;
             // 
             // panel2
@@ -312,8 +312,9 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.panel2.Location = new System.Drawing.Point(-9, 23);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 431);
+            this.panel2.Size = new System.Drawing.Size(12, 431);
             this.panel2.TabIndex = 19;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // Register
             // 

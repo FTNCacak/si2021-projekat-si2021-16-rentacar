@@ -10,6 +10,7 @@ namespace DataLayer
 {
     public class CarRepository
     {
+
         public List<Car> GetAllCars()
         {
             List<Car> auti = new List<Car>();
@@ -37,5 +38,6 @@ namespace DataLayer
             }
             return auti;
         }
+
     }
 }

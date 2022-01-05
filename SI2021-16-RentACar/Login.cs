@@ -58,35 +58,21 @@ namespace SI2021_16_RentACar
 
         private void button1_login_Click(object sender, EventArgs e)
         {
-            if (textBox1_userID.Text != string.Empty || textBox2_password.Text != string.Empty)
+            Buyer b = new Buyer();
+            b.Id_user = textBox1_userID.Text;
+            b.password = textBox2_password.Text;
+            if (this.buyerBusiness.LogInBuyers(b))
             {
-                using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
-                {
-                    SqlCommand sqlCommand = new SqlCommand("select * from Buyers where Id_user='" + textBox1_userID.Text + "' and password='" + textBox2_password.Text + "'", sqlConnection);
-                    sqlCommand.Connection = sqlConnection;
-                    sqlConnection.Open();
-                    SqlDataReader dr = sqlCommand.ExecuteReader();
-                    if (dr.Read())
-                    {
-                        dr.Close();
-                        this.Hide();
-                        Menu menu = new Menu();
-                        menu.ShowDialog();
-                    }
-                    else
-                    {
-                        dr.Close();
-                        MessageBox.Show("No Account avilable with this username and password.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    }
-                }
-
+                this.Hide();
+                Menu menu = new Menu();
+                menu.ShowDialog();
             }
             else
             {
-                MessageBox.Show("Please enter value in all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new MessageBoxLogin().ShowDialog();
             }
-
         }
+
 
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
@@ -117,6 +103,11 @@ namespace SI2021_16_RentACar
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void label2_password_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

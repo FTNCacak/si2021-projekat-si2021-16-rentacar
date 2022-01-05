@@ -140,6 +140,7 @@
             this.label2_password.Size = new System.Drawing.Size(120, 50);
             this.label2_password.TabIndex = 9;
             this.label2_password.Text = "Login";
+            this.label2_password.Click += new System.EventHandler(this.label2_password_Click);
             // 
             // label1_userID
             // 
@@ -209,9 +210,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(790, 0);
+            this.close_button.Location = new System.Drawing.Point(793, 0);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(23, 23);
             this.close_button.TabIndex = 1;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -230,15 +231,15 @@
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.panel2.Location = new System.Drawing.Point(-9, 23);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(11, 431);
+            this.panel2.Size = new System.Drawing.Size(12, 431);
             this.panel2.TabIndex = 17;
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.panel3.Location = new System.Drawing.Point(-1, 438);
+            this.panel3.Location = new System.Drawing.Point(-1, 437);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(444, 11);
+            this.panel3.Size = new System.Drawing.Size(444, 12);
             this.panel3.TabIndex = 18;
             // 
             // Login

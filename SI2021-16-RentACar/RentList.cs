@@ -1,7 +1,11 @@
-﻿using System;
+﻿using BusinessLayer;
+using DataLayer;
+using DataLayer.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,8 +16,10 @@ namespace SI2021_16_RentACar
 {
     public partial class RentList : Form
     {
+        private readonly CarBusiness carBusiness;
         public RentList()
         {
+            this.carBusiness = new CarBusiness();
             InitializeComponent();
         }
 
@@ -21,6 +27,7 @@ namespace SI2021_16_RentACar
         {
 
         }
+
 
         private void RentList_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -48,7 +55,7 @@ namespace SI2021_16_RentACar
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void richTextBox1_cartext_TextChanged(object sender, EventArgs e)
@@ -56,12 +63,24 @@ namespace SI2021_16_RentACar
            
         }
 
-        private void close_button_Click(object sender, EventArgs e)
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            Application.Exit();
+
+
         }
 
-        private void close_button_Click_1(object sender, EventArgs e)
+        private void panel1_upper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void RentList_Load(object sender, EventArgs e)
+        {
+            
+            
+        }
+
+        private void close_button_Click_2(object sender, EventArgs e)
         {
             Application.Exit();
         }
