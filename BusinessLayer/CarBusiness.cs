@@ -16,8 +16,19 @@ namespace BusinessLayer
             this.carRepository = new CarRepository();
         }
         public List<Car> GetAllCars()
-        {
+        { 
             return this.carRepository.GetAllCars();
+        }
+        public bool Checks(Car c)
+        {
+            if (this.carRepository.Check(c) > 0)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }

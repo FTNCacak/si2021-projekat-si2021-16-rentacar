@@ -55,12 +55,38 @@ namespace SI2021_16_RentACar
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            List<Car> cars = this.carBusiness.GetAllCars();
+            Car c1 = new Car();
+            c1.Id_car = Convert.ToInt32(textBox1.Text);
+            if (this.carBusiness.Checks(c1) && c1.Id_car != 0)
+            {
+                foreach (Car c in cars)
+                { 
+                    if(c1.Id_car ==c.Id_car)
+                    {
+                        label1.Text = c.free;
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("This car is not asdasda!", "Availability", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void richTextBox1_cartext_TextChanged(object sender, EventArgs e)
         {
            
+        }
+
+        private void close_button_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void close_button_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -77,12 +103,20 @@ namespace SI2021_16_RentACar
         private void RentList_Load(object sender, EventArgs e)
         {
             
-            
+            using (SqlConnection SqlCon = new SqlConnection(Constants.connectionString))
+            {
+                SqlCon.Open();
+                SqlDataAdapter da = new SqlDataAdapter("Select Id_car as ID, brand as Brand, name as Name, pricePD as Price, year as Year, fuel as Fuel, amount as Amount from Cars", SqlCon);
+                DataTable dt = new DataTable();
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                dataGridView1.AllowUserToAddRows = false;
+            }
         }
 
-        private void close_button_Click_2(object sender, EventArgs e)
+        private void label1_Click_1(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
     }
 }

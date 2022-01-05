@@ -95,20 +95,5 @@ namespace SI2021_16_RentACar
         {
 
         }
-
-        private void label9_price_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label7_amount_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_carid_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

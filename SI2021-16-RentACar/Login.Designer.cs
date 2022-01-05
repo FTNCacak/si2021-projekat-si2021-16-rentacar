@@ -140,7 +140,6 @@
             this.label2_password.Size = new System.Drawing.Size(120, 50);
             this.label2_password.TabIndex = 9;
             this.label2_password.Text = "Login";
-            this.label2_password.Click += new System.EventHandler(this.label2_password_Click);
             // 
             // label1_userID
             // 

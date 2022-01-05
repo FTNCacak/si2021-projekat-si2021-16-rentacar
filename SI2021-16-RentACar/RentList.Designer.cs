@@ -32,6 +32,7 @@
             this.panel1_upper = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.close_button = new System.Windows.Forms.Button();
             this.label1_rent = new System.Windows.Forms.Label();
             this.label2_rentacar = new System.Windows.Forms.Label();
             this.label3_ajs = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.close_button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1_upper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2_down.SuspendLayout();
@@ -55,9 +56,9 @@
             // panel1_upper
             // 
             this.panel1_upper.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.panel1_upper.Controls.Add(this.close_button);
             this.panel1_upper.Controls.Add(this.label2);
             this.panel1_upper.Controls.Add(this.pictureBox3);
+            this.panel1_upper.Controls.Add(this.close_button);
             this.panel1_upper.Controls.Add(this.label1_rent);
             this.panel1_upper.Controls.Add(this.label2_rentacar);
             this.panel1_upper.Controls.Add(this.label3_ajs);
@@ -86,6 +87,19 @@
             this.pictureBox3.Size = new System.Drawing.Size(24, 18);
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
+            // 
+            // close_button
+            // 
+            this.close_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.close_button.FlatAppearance.BorderSize = 0;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
+            this.close_button.Location = new System.Drawing.Point(617, 0);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.TabIndex = 36;
+            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click_1);
             // 
             // label1_rent
             // 
@@ -189,6 +203,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(87, 13);
             this.textBox1.TabIndex = 30;
+            this.textBox1.Text = "0";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // button1
@@ -229,22 +244,22 @@
             this.dataGridView1.Location = new System.Drawing.Point(29, 167);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(586, 299);
             this.dataGridView1.TabIndex = 69;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
-            // close_button
+            // label1
             // 
-            this.close_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.close_button.FlatAppearance.BorderSize = 0;
-            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(620, 0);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
-            this.close_button.TabIndex = 40;
-            this.close_button.UseVisualStyleBackColor = true;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click_2);
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.label1.Location = new System.Drawing.Point(407, 126);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(125, 13);
+            this.label1.TabIndex = 70;
+            this.label1.Text = "Available or not available";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // RentList
             // 
@@ -252,6 +267,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(645, 568);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -292,11 +308,12 @@
         private System.Windows.Forms.Label label2_rentacar;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1_rent;
+        private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button close_button;
+        private System.Windows.Forms.Label label1;
     }
 }

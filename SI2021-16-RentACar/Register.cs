@@ -50,14 +50,14 @@ namespace SI2021_16_RentACar
             b.password = textBox4_password.Text;
             if (this.buyerBusiness.RegisterBuyers(b))
             {
-                new MessageBoxRegister1().ShowDialog();
+                MessageBox.Show("Your account is created. Please login now.", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 Login login = new Login();
                 this.Hide();
                 login.Show();
             }
             else
             {
-                new MessageBoxRegister2().ShowDialog();
+                MessageBox.Show("Please enter value in all field, if all fields are filled, please try another ID", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
 

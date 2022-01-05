@@ -69,7 +69,7 @@ namespace SI2021_16_RentACar
             }
             else
             {
-                new MessageBoxLogin().ShowDialog();
+                new MessageBox1().ShowDialog();
             }
         }
 
@@ -103,11 +103,6 @@ namespace SI2021_16_RentACar
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
-        }
-
-        private void label2_password_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

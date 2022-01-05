@@ -185,9 +185,9 @@
             this.listBox1_rentacarlist.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.listBox1_rentacarlist.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.listBox1_rentacarlist.FormattingEnabled = true;
-            this.listBox1_rentacarlist.Location = new System.Drawing.Point(337, 111);
+            this.listBox1_rentacarlist.Location = new System.Drawing.Point(616, 136);
             this.listBox1_rentacarlist.Name = "listBox1_rentacarlist";
-            this.listBox1_rentacarlist.Size = new System.Drawing.Size(558, 275);
+            this.listBox1_rentacarlist.Size = new System.Drawing.Size(273, 275);
             this.listBox1_rentacarlist.TabIndex = 32;
             // 
             // label3_address
@@ -195,7 +195,7 @@
             this.label3_address.AutoSize = true;
             this.label3_address.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_address.Location = new System.Drawing.Point(21, 123);
+            this.label3_address.Location = new System.Drawing.Point(21, 138);
             this.label3_address.Name = "label3_address";
             this.label3_address.Size = new System.Drawing.Size(70, 20);
             this.label3_address.TabIndex = 36;
@@ -234,7 +234,7 @@
             this.textBox4_upin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox4_upin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox4_upin.Location = new System.Drawing.Point(113, 123);
+            this.textBox4_upin.Location = new System.Drawing.Point(113, 138);
             this.textBox4_upin.Name = "textBox4_upin";
             this.textBox4_upin.Size = new System.Drawing.Size(177, 20);
             this.textBox4_upin.TabIndex = 44;
@@ -245,19 +245,18 @@
             this.label6_carid.AutoSize = true;
             this.label6_carid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label6_carid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label6_carid.Location = new System.Drawing.Point(21, 209);
+            this.label6_carid.Location = new System.Drawing.Point(320, 136);
             this.label6_carid.Name = "label6_carid";
             this.label6_carid.Size = new System.Drawing.Size(56, 20);
             this.label6_carid.TabIndex = 45;
             this.label6_carid.Text = "Car ID:";
-            this.label6_carid.Click += new System.EventHandler(this.label6_carid_Click);
             // 
             // label8_startdate
             // 
             this.label8_startdate.AutoSize = true;
             this.label8_startdate.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label8_startdate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label8_startdate.Location = new System.Drawing.Point(21, 301);
+            this.label8_startdate.Location = new System.Drawing.Point(21, 230);
             this.label8_startdate.Name = "label8_startdate";
             this.label8_startdate.Size = new System.Drawing.Size(40, 20);
             this.label8_startdate.TabIndex = 46;
@@ -269,12 +268,11 @@
             this.label7_amount.AutoSize = true;
             this.label7_amount.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label7_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label7_amount.Location = new System.Drawing.Point(21, 240);
+            this.label7_amount.Location = new System.Drawing.Point(320, 167);
             this.label7_amount.Name = "label7_amount";
             this.label7_amount.Size = new System.Drawing.Size(71, 20);
             this.label7_amount.TabIndex = 47;
             this.label7_amount.Text = "Amount:";
-            this.label7_amount.Click += new System.EventHandler(this.label7_amount_Click);
             // 
             // button1_delete
             // 
@@ -282,7 +280,7 @@
             this.button1_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_delete.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1_delete.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1_delete.Location = new System.Drawing.Point(197, 343);
+            this.button1_delete.Location = new System.Drawing.Point(493, 265);
             this.button1_delete.Name = "button1_delete";
             this.button1_delete.Size = new System.Drawing.Size(93, 33);
             this.button1_delete.TabIndex = 48;
@@ -295,7 +293,7 @@
             this.button2_add.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2_add.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button2_add.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_add.Location = new System.Drawing.Point(25, 343);
+            this.button2_add.Location = new System.Drawing.Point(324, 265);
             this.button2_add.Name = "button2_add";
             this.button2_add.Size = new System.Drawing.Size(93, 33);
             this.button2_add.TabIndex = 49;
@@ -308,7 +306,7 @@
             this.textBox6_carid.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox6_carid.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox6_carid.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox6_carid.Location = new System.Drawing.Point(113, 209);
+            this.textBox6_carid.Location = new System.Drawing.Point(409, 136);
             this.textBox6_carid.Name = "textBox6_carid";
             this.textBox6_carid.Size = new System.Drawing.Size(177, 20);
             this.textBox6_carid.TabIndex = 50;
@@ -319,7 +317,7 @@
             this.textBox7_amount.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox7_amount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7_amount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox7_amount.Location = new System.Drawing.Point(113, 240);
+            this.textBox7_amount.Location = new System.Drawing.Point(409, 167);
             this.textBox7_amount.Name = "textBox7_amount";
             this.textBox7_amount.Size = new System.Drawing.Size(177, 20);
             this.textBox7_amount.TabIndex = 51;
@@ -329,19 +327,18 @@
             this.label9_price.AutoSize = true;
             this.label9_price.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label9_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label9_price.Location = new System.Drawing.Point(21, 271);
+            this.label9_price.Location = new System.Drawing.Point(320, 198);
             this.label9_price.Name = "label9_price";
             this.label9_price.Size = new System.Drawing.Size(47, 20);
             this.label9_price.TabIndex = 53;
             this.label9_price.Text = "Price:";
-            this.label9_price.Click += new System.EventHandler(this.label9_price_Click);
             // 
             // textBox8_price
             // 
             this.textBox8_price.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox8_price.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox8_price.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox8_price.Location = new System.Drawing.Point(113, 271);
+            this.textBox8_price.Location = new System.Drawing.Point(409, 198);
             this.textBox8_price.Name = "textBox8_price";
             this.textBox8_price.Size = new System.Drawing.Size(177, 20);
             this.textBox8_price.TabIndex = 54;
@@ -352,7 +349,7 @@
             this.label5_number.AutoSize = true;
             this.label5_number.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label5_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label5_number.Location = new System.Drawing.Point(21, 154);
+            this.label5_number.Location = new System.Drawing.Point(21, 169);
             this.label5_number.Name = "label5_number";
             this.label5_number.Size = new System.Drawing.Size(72, 20);
             this.label5_number.TabIndex = 56;
@@ -363,7 +360,7 @@
             this.textBox5_number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox5_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox5_number.Location = new System.Drawing.Point(113, 152);
+            this.textBox5_number.Location = new System.Drawing.Point(113, 167);
             this.textBox5_number.Name = "textBox5_number";
             this.textBox5_number.Size = new System.Drawing.Size(177, 20);
             this.textBox5_number.TabIndex = 57;
@@ -373,7 +370,7 @@
             this.label3_upin.AutoSize = true;
             this.label3_upin.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.label3_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_upin.Location = new System.Drawing.Point(21, 183);
+            this.label3_upin.Location = new System.Drawing.Point(21, 198);
             this.label3_upin.Name = "label3_upin";
             this.label3_upin.Size = new System.Drawing.Size(50, 20);
             this.label3_upin.TabIndex = 61;
@@ -384,7 +381,7 @@
             this.textBox3_upin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.textBox3_upin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox3_upin.Location = new System.Drawing.Point(113, 183);
+            this.textBox3_upin.Location = new System.Drawing.Point(113, 198);
             this.textBox3_upin.Name = "textBox3_upin";
             this.textBox3_upin.Size = new System.Drawing.Size(177, 20);
             this.textBox3_upin.TabIndex = 62;
@@ -393,7 +390,7 @@
             // 
             this.numericUpDown1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
             this.numericUpDown1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.numericUpDown1.Location = new System.Drawing.Point(113, 301);
+            this.numericUpDown1.Location = new System.Drawing.Point(113, 230);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             30,
             0,

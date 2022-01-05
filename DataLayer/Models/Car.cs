@@ -11,7 +11,7 @@ namespace DataLayer.Models
         public int Id_car { get; set; }
         public string brand { get; set; }
         public string name { get; set; }
-        public bool free { get; set; }
+        public string free { get; set; }
         public decimal pricePD { get; set; }
         public int year { get; set; }
         public string fuel { get; set; }
