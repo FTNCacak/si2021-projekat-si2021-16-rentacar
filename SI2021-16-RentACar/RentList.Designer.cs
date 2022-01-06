@@ -37,20 +37,23 @@
             this.label2_rentacar = new System.Windows.Forms.Label();
             this.label3_ajs = new System.Windows.Forms.Label();
             this.panel2_down = new System.Windows.Forms.Panel();
+            this.label4_loginID = new System.Windows.Forms.Label();
             this.label1_ajs_soft = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.button1_next = new System.Windows.Forms.Button();
             this.button2_back = new System.Windows.Forms.Button();
             this.label3_email = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.numericCheck = new System.Windows.Forms.NumericUpDown();
             this.panel1_upper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2_down.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCheck)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1_upper
@@ -85,6 +88,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 38;
             this.pictureBox3.TabStop = false;
             // 
@@ -94,9 +98,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(617, 0);
+            this.close_button.Location = new System.Drawing.Point(620, 2);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 36;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click_1);
@@ -137,11 +141,23 @@
             // panel2_down
             // 
             this.panel2_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel2_down.Controls.Add(this.label4_loginID);
             this.panel2_down.Controls.Add(this.label1_ajs_soft);
+            this.panel2_down.Controls.Add(this.label3);
             this.panel2_down.Location = new System.Drawing.Point(-1, 540);
             this.panel2_down.Name = "panel2_down";
             this.panel2_down.Size = new System.Drawing.Size(649, 36);
             this.panel2_down.TabIndex = 2;
+            // 
+            // label4_loginID
+            // 
+            this.label4_loginID.AutoSize = true;
+            this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Name = "label4_loginID";
+            this.label4_loginID.Size = new System.Drawing.Size(0, 15);
+            this.label4_loginID.TabIndex = 73;
             // 
             // label1_ajs_soft
             // 
@@ -153,7 +169,17 @@
             this.label1_ajs_soft.Size = new System.Drawing.Size(107, 17);
             this.label1_ajs_soft.TabIndex = 3;
             this.label1_ajs_soft.Text = "© 2021. AJS Soft";
-            this.label1_ajs_soft.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label3.Location = new System.Drawing.Point(8, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.TabIndex = 72;
+            this.label3.Text = "Logged as:";
             // 
             // button1_next
             // 
@@ -194,25 +220,13 @@
             this.label3_email.TabIndex = 29;
             this.label3_email.Text = "Car ID:";
             // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox1.Location = new System.Drawing.Point(88, 126);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(87, 13);
-            this.textBox1.TabIndex = 30;
-            this.textBox1.Text = "0";
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1.Location = new System.Drawing.Point(201, 115);
+            this.button1.Location = new System.Drawing.Point(204, 115);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 33);
             this.button1.TabIndex = 32;
@@ -247,19 +261,28 @@
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(586, 299);
             this.dataGridView1.TabIndex = 69;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label1.Location = new System.Drawing.Point(407, 126);
+            this.label1.Location = new System.Drawing.Point(421, 119);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(125, 13);
+            this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 70;
-            this.label1.Text = "Available or not available";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // numericCheck
+            // 
+            this.numericCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.numericCheck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.numericCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.numericCheck.Location = new System.Drawing.Point(88, 121);
+            this.numericCheck.Name = "numericCheck";
+            this.numericCheck.Size = new System.Drawing.Size(101, 20);
+            this.numericCheck.TabIndex = 71;
             // 
             // RentList
             // 
@@ -267,12 +290,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(645, 568);
+            this.Controls.Add(this.numericCheck);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3_email);
             this.Controls.Add(this.button2_back);
             this.Controls.Add(this.button1_next);
@@ -291,6 +314,7 @@
             this.panel2_down.ResumeLayout(false);
             this.panel2_down.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericCheck)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -303,7 +327,6 @@
         private System.Windows.Forms.Button button1_next;
         private System.Windows.Forms.Button button2_back;
         private System.Windows.Forms.Label label3_email;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3_ajs;
         private System.Windows.Forms.Label label2_rentacar;
         private System.Windows.Forms.Button button1;
@@ -315,5 +338,8 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.NumericUpDown numericCheck;
+        private System.Windows.Forms.Label label4_loginID;
+        private System.Windows.Forms.Label label3;
     }
 }

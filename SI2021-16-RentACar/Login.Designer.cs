@@ -46,6 +46,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.checkBox1_show = new System.Windows.Forms.CheckBox();
             this.panel1_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -61,8 +62,8 @@
             this.textBox2_password.Location = new System.Drawing.Point(141, 145);
             this.textBox2_password.Name = "textBox2_password";
             this.textBox2_password.Size = new System.Drawing.Size(220, 22);
-            this.textBox2_password.TabIndex = 13;
-            this.textBox2_password.TextChanged += new System.EventHandler(this.textBox2_password_TextChanged);
+            this.textBox2_password.TabIndex = 15;
+            this.textBox2_password.UseSystemPasswordChar = true;
             // 
             // textBox1_userID
             // 
@@ -73,8 +74,7 @@
             this.textBox1_userID.Location = new System.Drawing.Point(141, 108);
             this.textBox1_userID.Name = "textBox1_userID";
             this.textBox1_userID.Size = new System.Drawing.Size(220, 22);
-            this.textBox1_userID.TabIndex = 12;
-            this.textBox1_userID.TextChanged += new System.EventHandler(this.textBox1_userID_TextChanged);
+            this.textBox1_userID.TabIndex = 20;
             // 
             // panel1_login
             // 
@@ -117,7 +117,6 @@
             this.label1_rentacar.Size = new System.Drawing.Size(205, 50);
             this.label1_rentacar.TabIndex = 8;
             this.label1_rentacar.Text = "Rent A Car";
-            this.label1_rentacar.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // label3_login
             // 
@@ -190,7 +189,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(819, 26);
             this.panel1.TabIndex = 16;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label1
             // 
@@ -209,9 +207,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(793, 0);
+            this.close_button.Location = new System.Drawing.Point(788, 5);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(23, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 1;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -222,6 +220,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(5, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -241,12 +240,25 @@
             this.panel3.Size = new System.Drawing.Size(444, 12);
             this.panel3.TabIndex = 18;
             // 
+            // checkBox1_show
+            // 
+            this.checkBox1_show.AutoSize = true;
+            this.checkBox1_show.FlatAppearance.BorderSize = 0;
+            this.checkBox1_show.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.checkBox1_show.Location = new System.Drawing.Point(343, 149);
+            this.checkBox1_show.Name = "checkBox1_show";
+            this.checkBox1_show.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1_show.TabIndex = 38;
+            this.checkBox1_show.UseVisualStyleBackColor = true;
+            this.checkBox1_show.CheckedChanged += new System.EventHandler(this.checkBox1_show_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(816, 440);
+            this.Controls.Add(this.checkBox1_show);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -295,5 +307,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.CheckBox checkBox1_show;
     }
 }

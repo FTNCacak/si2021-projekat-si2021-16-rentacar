@@ -39,7 +39,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1_ok = new System.Windows.Forms.Button();
-            this.button2_cancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
@@ -76,6 +75,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(9, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 26;
             this.pictureBox2.TabStop = false;
             // 
@@ -85,7 +85,7 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(409, 3);
+            this.close_button.Location = new System.Drawing.Point(413, 3);
             this.close_button.Name = "close_button";
             this.close_button.Size = new System.Drawing.Size(24, 23);
             this.close_button.TabIndex = 26;
@@ -111,7 +111,6 @@
             this.label1_message.TabIndex = 87;
             this.label1_message.Text = "Please enter value in all fields, \r\n";
             this.label1_message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1_message.Click += new System.EventHandler(this.label1_message_Click);
             // 
             // panel5
             // 
@@ -135,6 +134,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(41, 40);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 64);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 83;
             this.pictureBox1.TabStop = false;
             // 
@@ -144,27 +144,13 @@
             this.button1_ok.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_ok.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1_ok.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1_ok.Location = new System.Drawing.Point(26, 127);
+            this.button1_ok.Location = new System.Drawing.Point(170, 128);
             this.button1_ok.Name = "button1_ok";
             this.button1_ok.Size = new System.Drawing.Size(95, 31);
             this.button1_ok.TabIndex = 82;
             this.button1_ok.Text = "Ok";
             this.button1_ok.UseVisualStyleBackColor = false;
             this.button1_ok.Click += new System.EventHandler(this.button1_ok_Click);
-            // 
-            // button2_cancel
-            // 
-            this.button2_cancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.button2_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_cancel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2_cancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_cancel.Location = new System.Drawing.Point(313, 127);
-            this.button2_cancel.Name = "button2_cancel";
-            this.button2_cancel.Size = new System.Drawing.Size(95, 31);
-            this.button2_cancel.TabIndex = 81;
-            this.button2_cancel.Text = "Cancel";
-            this.button2_cancel.UseVisualStyleBackColor = false;
-            this.button2_cancel.Click += new System.EventHandler(this.button2_cancel_Click);
             // 
             // label1
             // 
@@ -205,11 +191,12 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1_ok);
-            this.Controls.Add(this.button2_cancel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MessageBoxRegister2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxRegister2";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MessageBoxRegister2_FormClosed);
             this.Load += new System.EventHandler(this.MessageBoxRegister2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -232,7 +219,6 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1_ok;
-        private System.Windows.Forms.Button button2_cancel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

@@ -16,7 +16,7 @@ namespace DataLayer
             {
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO Buyers VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", b.Id_user, b.Fname, b.Lname, b.adress, b.phoneNumber, b.email, b.password, b.upin);
+                sqlCommand.CommandText = string.Format("INSERT INTO Buyers VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", b.Id_user, b.Fname, b.Lname, b.address, b.phoneNumber, b.email, b.password, b.upin);
                 return sqlCommand.ExecuteNonQuery();
             }
         }
@@ -36,12 +36,15 @@ namespace DataLayer
                 else
                 {
                     dr.Close();
-                    SqlCommand cmd = new SqlCommand("insert into Buyers(email, Id_user, Fname, Lname, password) values(@email, @Id_user, @Fname, @Lname, @password)", sqlConnection);
+                    SqlCommand cmd = new SqlCommand("insert into Buyers(email, Id_user, Fname, Lname, password, address, phoneNumber, upin) values(@email, @Id_user, @Fname, @Lname, @password, @address, @phoneNumber, @upin)", sqlConnection);
                     cmd.Parameters.AddWithValue("email", b.email);
                     cmd.Parameters.AddWithValue("Id_user", b.Id_user);
                     cmd.Parameters.AddWithValue("Fname", b.Fname);
                     cmd.Parameters.AddWithValue("Lname", b.Lname);
                     cmd.Parameters.AddWithValue("password", b.password);
+                    cmd.Parameters.AddWithValue("address", b.address);
+                    cmd.Parameters.AddWithValue("phoneNumber", b.phoneNumber);
+                    cmd.Parameters.AddWithValue("upin", b.upin);
                     return cmd.ExecuteNonQuery();
                 }
             }
@@ -69,7 +72,7 @@ namespace DataLayer
 
         public List<Buyer> GetAllBuyers()
         {
-            List<Buyer> kupci = new List<Buyer>();
+            List<Buyer> buy = new List<Buyer>();
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
             {
                 SqlCommand sqlCommand = new SqlCommand();
@@ -84,15 +87,15 @@ namespace DataLayer
                     b.Id_user = sqlDataReader.GetString(0);
                     b.Fname = sqlDataReader.GetString(1);
                     b.Lname = sqlDataReader.GetString(2);
-                    b.adress = sqlDataReader.GetString(3);
+                    b.address = sqlDataReader.GetString(3);
                     b.phoneNumber = sqlDataReader.GetString(4);
                     b.email = sqlDataReader.GetString(5);
                     b.password = sqlDataReader.GetString(6);
                     b.upin = sqlDataReader.GetString(7);
-                    kupci.Add(b);
+                    buy.Add(b);
                 }
             }
-            return kupci;
+            return buy;
         }
     }
 }

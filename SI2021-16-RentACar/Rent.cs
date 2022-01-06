@@ -17,16 +17,6 @@ namespace SI2021_16_RentACar
             InitializeComponent();
         }
 
-        private void label1_mainmenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Rent_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -41,48 +31,16 @@ namespace SI2021_16_RentACar
 
         private void button1_next_Click(object sender, EventArgs e)
         {
-            Confirmation confirmation = new Confirmation();
-            this.Hide();
-            confirmation.Show();
-        }
-
-        private void Rent_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label8_startdate_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_add_Click(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void add(String name, String pos, String team)
-        {
             
-        }
-
-        private void textBox4_upin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_price_TextChanged(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void textBox6_carid_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
+            if(listBox1_rentacarlist.Items.Count == 0)
+            {
+                new MessageBoxRentNext().ShowDialog();
+            }
+            else
+            {
+                new MessageBoxRent().ShowDialog();
+                this.Hide();
+            }
 
         }
 
@@ -91,7 +49,17 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void label2_rentacar_Click(object sender, EventArgs e)
+        private void Rent_Load(object sender, EventArgs e)
+        {
+            label4_loginID.Text = Login.BuyerId;
+        }
+
+        private void button2_add_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_delete_Click(object sender, EventArgs e)
         {
 
         }

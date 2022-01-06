@@ -11,7 +11,7 @@ namespace DataLayer.Models
         public string Id_user { get; set; }
         public string Fname { get; set; }
         public string Lname { get; set; }
-        public string adress { get; set; }
+        public string address { get; set; }
         public string phoneNumber { get; set; }
         public string email { get; set; }
         public string password { get; set; }

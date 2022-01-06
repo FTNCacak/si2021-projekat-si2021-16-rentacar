@@ -17,21 +17,6 @@ namespace SI2021_16_RentACar
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void TermsOfService_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -44,14 +29,14 @@ namespace SI2021_16_RentACar
             menu.Show();
         }
 
-        private void richTextBox1_cartext_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void TermsOfService_Load(object sender, EventArgs e)
+        {
+            label4_loginID.Text = Login.BuyerId;
         }
     }
 }

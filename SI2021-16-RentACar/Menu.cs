@@ -24,36 +24,6 @@ namespace SI2021_16_RentACar
             rentList.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_mainmenu_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Menu_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -83,6 +53,11 @@ namespace SI2021_16_RentACar
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+            label4_loginID.Text = Login.BuyerId;
         }
     }
 }

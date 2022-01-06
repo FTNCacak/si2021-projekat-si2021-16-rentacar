@@ -21,27 +21,8 @@ namespace SI2021_16_RentACar
         {
             Application.Exit();
         }
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void MessageBox1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button1_ok_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -51,7 +32,7 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
+        private void MessageBoxLogin_Load(object sender, EventArgs e)
         {
 
         }

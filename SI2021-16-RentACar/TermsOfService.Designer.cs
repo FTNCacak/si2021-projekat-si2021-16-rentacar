@@ -30,31 +30,45 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TermsOfService));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label4_loginID = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.close_button = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.richTextBox1_cartext = new System.Windows.Forms.RichTextBox();
             this.button1_back = new System.Windows.Forms.Button();
-            this.close_button = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1.Controls.Add(this.label4_loginID);
             this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(-2, 452);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(835, 33);
             this.panel1.TabIndex = 3;
+            // 
+            // label4_loginID
+            // 
+            this.label4_loginID.AutoSize = true;
+            this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Name = "label4_loginID";
+            this.label4_loginID.Size = new System.Drawing.Size(0, 15);
+            this.label4_loginID.TabIndex = 39;
             // 
             // label2
             // 
@@ -66,7 +80,17 @@
             this.label2.Size = new System.Drawing.Size(107, 17);
             this.label2.TabIndex = 0;
             this.label2.Text = "© 2021. AJS Soft";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label6.Location = new System.Drawing.Point(8, 7);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(65, 15);
+            this.label6.TabIndex = 38;
+            this.label6.Text = "Logged as:";
             // 
             // panel2
             // 
@@ -82,6 +106,40 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(842, 104);
             this.panel2.TabIndex = 31;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label5.Location = new System.Drawing.Point(28, 6);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(95, 15);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Rent a Car - AJS";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(4, 3);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 39;
+            this.pictureBox3.TabStop = false;
+            // 
+            // close_button
+            // 
+            this.close_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.close_button.FlatAppearance.BorderSize = 0;
+            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
+            this.close_button.Location = new System.Drawing.Point(809, 0);
+            this.close_button.Name = "close_button";
+            this.close_button.Size = new System.Drawing.Size(26, 23);
+            this.close_button.TabIndex = 38;
+            this.close_button.UseVisualStyleBackColor = true;
+            this.close_button.Click += new System.EventHandler(this.close_button_Click);
             // 
             // pictureBox2
             // 
@@ -102,7 +160,6 @@
             this.label1.Size = new System.Drawing.Size(157, 25);
             this.label1.TabIndex = 31;
             this.label1.Text = "Terms of Service";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label3
             // 
@@ -115,7 +172,6 @@
             this.label3.Size = new System.Drawing.Size(173, 42);
             this.label3.TabIndex = 30;
             this.label3.Text = "Rent A Car";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 
@@ -138,7 +194,6 @@
             this.richTextBox1_cartext.Size = new System.Drawing.Size(784, 265);
             this.richTextBox1_cartext.TabIndex = 35;
             this.richTextBox1_cartext.Text = resources.GetString("richTextBox1_cartext.Text");
-            this.richTextBox1_cartext.TextChanged += new System.EventHandler(this.richTextBox1_cartext_TextChanged);
             // 
             // button1_back
             // 
@@ -153,39 +208,6 @@
             this.button1_back.Text = "Back";
             this.button1_back.UseVisualStyleBackColor = false;
             this.button1_back.Click += new System.EventHandler(this.button1_back_Click);
-            // 
-            // close_button
-            // 
-            this.close_button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.close_button.FlatAppearance.BorderSize = 0;
-            this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(806, 0);
-            this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
-            this.close_button.TabIndex = 38;
-            this.close_button.UseVisualStyleBackColor = true;
-            this.close_button.Click += new System.EventHandler(this.close_button_Click);
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(3, 3);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(24, 18);
-            this.pictureBox3.TabIndex = 39;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label5.Location = new System.Drawing.Point(27, 6);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(95, 15);
-            this.label5.TabIndex = 40;
-            this.label5.Text = "Rent a Car - AJS";
             // 
             // TermsOfService
             // 
@@ -203,12 +225,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TermsOfService_FormClosed);
+            this.Load += new System.EventHandler(this.TermsOfService_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -227,5 +250,7 @@
         private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label4_loginID;
+        private System.Windows.Forms.Label label6;
     }
 }

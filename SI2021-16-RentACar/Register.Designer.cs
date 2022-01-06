@@ -44,7 +44,7 @@
             this.textBox3_surname = new System.Windows.Forms.TextBox();
             this.textBox4_password = new System.Windows.Forms.TextBox();
             this.textBox5_email = new System.Windows.Forms.TextBox();
-            this.label3_email = new System.Windows.Forms.Label();
+            this.label6_email = new System.Windows.Forms.Label();
             this.button3_back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +52,13 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label7_address = new System.Windows.Forms.Label();
+            this.label8_number = new System.Windows.Forms.Label();
+            this.label9_upin = new System.Windows.Forms.Label();
+            this.textBox1_address = new System.Windows.Forms.TextBox();
+            this.textBox2_number = new System.Windows.Forms.TextBox();
+            this.textBox3_upin = new System.Windows.Forms.TextBox();
+            this.checkBox1_show = new System.Windows.Forms.CheckBox();
             this.panel1_login.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -64,7 +71,7 @@
             this.button2_register.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2_register.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2_register.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_register.Location = new System.Drawing.Point(237, 340);
+            this.button2_register.Location = new System.Drawing.Point(231, 340);
             this.button2_register.Name = "button2_register";
             this.button2_register.Size = new System.Drawing.Size(166, 44);
             this.button2_register.TabIndex = 23;
@@ -78,11 +85,13 @@
             this.textBox2_name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox2_name.Location = new System.Drawing.Point(138, 167);
+            this.textBox2_name.Location = new System.Drawing.Point(138, 147);
+            this.textBox2_name.MaxLength = 10;
             this.textBox2_name.Name = "textBox2_name";
             this.textBox2_name.Size = new System.Drawing.Size(220, 22);
             this.textBox2_name.TabIndex = 21;
-            this.textBox2_name.TextChanged += new System.EventHandler(this.textBox2_name_TextChanged);
+            this.textBox2_name.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_name_KeyDown);
+            this.textBox2_name.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_name_KeyPress);
             // 
             // textBox1_userID
             // 
@@ -90,11 +99,12 @@
             this.textBox1_userID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1_userID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1_userID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox1_userID.Location = new System.Drawing.Point(138, 130);
+            this.textBox1_userID.Location = new System.Drawing.Point(138, 91);
+            this.textBox1_userID.MaxLength = 10;
             this.textBox1_userID.Name = "textBox1_userID";
             this.textBox1_userID.Size = new System.Drawing.Size(220, 22);
             this.textBox1_userID.TabIndex = 20;
-            this.textBox1_userID.TextChanged += new System.EventHandler(this.textBox1_userID_TextChanged);
+            this.textBox1_userID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_userID_KeyDown);
             // 
             // panel1_login
             // 
@@ -113,6 +123,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(19, 120);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(350, 141);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
@@ -141,11 +152,11 @@
             // label3_name
             // 
             this.label3_name.AutoSize = true;
-            this.label3_name.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3_name.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3_name.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_name.Location = new System.Drawing.Point(22, 167);
+            this.label3_name.Location = new System.Drawing.Point(22, 148);
             this.label3_name.Name = "label3_name";
-            this.label3_name.Size = new System.Drawing.Size(69, 25);
+            this.label3_name.Size = new System.Drawing.Size(60, 21);
             this.label3_name.TabIndex = 18;
             this.label3_name.Text = "Name:";
             // 
@@ -159,38 +170,37 @@
             this.label2_register.Size = new System.Drawing.Size(150, 46);
             this.label2_register.TabIndex = 17;
             this.label2_register.Text = "Register";
-            this.label2_register.Click += new System.EventHandler(this.label2_password_Click);
             // 
             // label1_userID
             // 
             this.label1_userID.AutoSize = true;
-            this.label1_userID.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1_userID.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1_userID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label1_userID.Location = new System.Drawing.Point(22, 130);
+            this.label1_userID.Location = new System.Drawing.Point(22, 92);
             this.label1_userID.Name = "label1_userID";
-            this.label1_userID.Size = new System.Drawing.Size(82, 25);
+            this.label1_userID.Size = new System.Drawing.Size(69, 21);
             this.label1_userID.TabIndex = 16;
             this.label1_userID.Text = "User ID:";
             // 
             // label4_password
             // 
             this.label4_password.AutoSize = true;
-            this.label4_password.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4_password.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label4_password.Location = new System.Drawing.Point(22, 240);
+            this.label4_password.Location = new System.Drawing.Point(22, 206);
             this.label4_password.Name = "label4_password";
-            this.label4_password.Size = new System.Drawing.Size(102, 25);
+            this.label4_password.Size = new System.Drawing.Size(86, 21);
             this.label4_password.TabIndex = 25;
             this.label4_password.Text = "Password:";
             // 
             // label5_surname
             // 
             this.label5_surname.AutoSize = true;
-            this.label5_surname.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5_surname.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5_surname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label5_surname.Location = new System.Drawing.Point(22, 203);
+            this.label5_surname.Location = new System.Drawing.Point(22, 176);
             this.label5_surname.Name = "label5_surname";
-            this.label5_surname.Size = new System.Drawing.Size(97, 25);
+            this.label5_surname.Size = new System.Drawing.Size(82, 21);
             this.label5_surname.TabIndex = 24;
             this.label5_surname.Text = "Surname:";
             // 
@@ -200,11 +210,13 @@
             this.textBox3_surname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3_surname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3_surname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox3_surname.Location = new System.Drawing.Point(138, 203);
+            this.textBox3_surname.Location = new System.Drawing.Point(138, 175);
+            this.textBox3_surname.MaxLength = 12;
             this.textBox3_surname.Name = "textBox3_surname";
             this.textBox3_surname.Size = new System.Drawing.Size(220, 22);
             this.textBox3_surname.TabIndex = 26;
-            this.textBox3_surname.TextChanged += new System.EventHandler(this.textBox3_surname_TextChanged);
+            this.textBox3_surname.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_surname_KeyDown);
+            this.textBox3_surname.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_surname_KeyPress);
             // 
             // textBox4_password
             // 
@@ -212,11 +224,13 @@
             this.textBox4_password.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4_password.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4_password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox4_password.Location = new System.Drawing.Point(138, 240);
+            this.textBox4_password.Location = new System.Drawing.Point(138, 205);
+            this.textBox4_password.MaxLength = 15;
             this.textBox4_password.Name = "textBox4_password";
             this.textBox4_password.Size = new System.Drawing.Size(220, 22);
             this.textBox4_password.TabIndex = 27;
-            this.textBox4_password.TextChanged += new System.EventHandler(this.textBox4_password_TextChanged);
+            this.textBox4_password.UseSystemPasswordChar = true;
+            this.textBox4_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox4_password_KeyDown);
             // 
             // textBox5_email
             // 
@@ -224,22 +238,24 @@
             this.textBox5_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5_email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.textBox5_email.Location = new System.Drawing.Point(138, 91);
+            this.textBox5_email.Location = new System.Drawing.Point(138, 119);
+            this.textBox5_email.MaxLength = 40;
             this.textBox5_email.Name = "textBox5_email";
             this.textBox5_email.Size = new System.Drawing.Size(220, 22);
             this.textBox5_email.TabIndex = 29;
-            this.textBox5_email.TextChanged += new System.EventHandler(this.textBox5_email_TextChanged);
+            this.textBox5_email.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox5_email_KeyDown);
+            this.textBox5_email.Leave += new System.EventHandler(this.textBox5_email_Leave);
             // 
-            // label3_email
+            // label6_email
             // 
-            this.label3_email.AutoSize = true;
-            this.label3_email.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.label3_email.Location = new System.Drawing.Point(22, 91);
-            this.label3_email.Name = "label3_email";
-            this.label3_email.Size = new System.Drawing.Size(72, 25);
-            this.label3_email.TabIndex = 28;
-            this.label3_email.Text = "E-mail:";
+            this.label6_email.AutoSize = true;
+            this.label6_email.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6_email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.label6_email.Location = new System.Drawing.Point(22, 120);
+            this.label6_email.Name = "label6_email";
+            this.label6_email.Size = new System.Drawing.Size(63, 21);
+            this.label6_email.TabIndex = 28;
+            this.label6_email.Text = "E-mail:";
             // 
             // button3_back
             // 
@@ -247,7 +263,7 @@
             this.button3_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3_back.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button3_back.Location = new System.Drawing.Point(27, 340);
+            this.button3_back.Location = new System.Drawing.Point(29, 340);
             this.button3_back.Name = "button3_back";
             this.button3_back.Size = new System.Drawing.Size(166, 44);
             this.button3_back.TabIndex = 23;
@@ -283,9 +299,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(787, 3);
+            this.close_button.Location = new System.Drawing.Point(788, 5);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 1;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -296,6 +312,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(5, 5);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
             // 
@@ -314,7 +331,92 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(12, 431);
             this.panel2.TabIndex = 19;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // label7_address
+            // 
+            this.label7_address.AutoSize = true;
+            this.label7_address.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.label7_address.Location = new System.Drawing.Point(23, 234);
+            this.label7_address.Name = "label7_address";
+            this.label7_address.Size = new System.Drawing.Size(74, 21);
+            this.label7_address.TabIndex = 31;
+            this.label7_address.Text = "Address:";
+            // 
+            // label8_number
+            // 
+            this.label8_number.AutoSize = true;
+            this.label8_number.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.label8_number.Location = new System.Drawing.Point(22, 262);
+            this.label8_number.Name = "label8_number";
+            this.label8_number.Size = new System.Drawing.Size(78, 21);
+            this.label8_number.TabIndex = 32;
+            this.label8_number.Text = "Number:";
+            // 
+            // label9_upin
+            // 
+            this.label9_upin.AutoSize = true;
+            this.label9_upin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.label9_upin.Location = new System.Drawing.Point(23, 290);
+            this.label9_upin.Name = "label9_upin";
+            this.label9_upin.Size = new System.Drawing.Size(54, 21);
+            this.label9_upin.TabIndex = 33;
+            this.label9_upin.Text = "UPIN:";
+            // 
+            // textBox1_address
+            // 
+            this.textBox1_address.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.textBox1_address.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1_address.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
+            this.textBox1_address.Location = new System.Drawing.Point(138, 233);
+            this.textBox1_address.MaxLength = 30;
+            this.textBox1_address.Name = "textBox1_address";
+            this.textBox1_address.Size = new System.Drawing.Size(220, 22);
+            this.textBox1_address.TabIndex = 34;
+            this.textBox1_address.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_address_KeyDown);
+            // 
+            // textBox2_number
+            // 
+            this.textBox2_number.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.textBox2_number.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox2_number.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2_number.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
+            this.textBox2_number.Location = new System.Drawing.Point(138, 261);
+            this.textBox2_number.MaxLength = 12;
+            this.textBox2_number.Name = "textBox2_number";
+            this.textBox2_number.Size = new System.Drawing.Size(220, 22);
+            this.textBox2_number.TabIndex = 35;
+            this.textBox2_number.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_number_KeyDown);
+            this.textBox2_number.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox2_number_KeyPress);
+            // 
+            // textBox3_upin
+            // 
+            this.textBox3_upin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.textBox3_upin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox3_upin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3_upin.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
+            this.textBox3_upin.Location = new System.Drawing.Point(138, 289);
+            this.textBox3_upin.MaxLength = 11;
+            this.textBox3_upin.Name = "textBox3_upin";
+            this.textBox3_upin.Size = new System.Drawing.Size(220, 22);
+            this.textBox3_upin.TabIndex = 36;
+            this.textBox3_upin.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox3_upin_KeyDown);
+            this.textBox3_upin.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textBox3_upin_KeyPress);
+            // 
+            // checkBox1_show
+            // 
+            this.checkBox1_show.AutoSize = true;
+            this.checkBox1_show.FlatAppearance.BorderSize = 0;
+            this.checkBox1_show.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.checkBox1_show.Location = new System.Drawing.Point(340, 209);
+            this.checkBox1_show.Name = "checkBox1_show";
+            this.checkBox1_show.Size = new System.Drawing.Size(15, 14);
+            this.checkBox1_show.TabIndex = 37;
+            this.checkBox1_show.UseVisualStyleBackColor = true;
+            this.checkBox1_show.CheckedChanged += new System.EventHandler(this.checkBox1_show_CheckedChanged);
             // 
             // Register
             // 
@@ -322,12 +424,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(816, 440);
+            this.Controls.Add(this.checkBox1_show);
+            this.Controls.Add(this.textBox3_upin);
+            this.Controls.Add(this.textBox2_number);
+            this.Controls.Add(this.textBox1_address);
+            this.Controls.Add(this.label9_upin);
+            this.Controls.Add(this.label8_number);
+            this.Controls.Add(this.label7_address);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3_back);
             this.Controls.Add(this.textBox5_email);
-            this.Controls.Add(this.label3_email);
+            this.Controls.Add(this.label6_email);
             this.Controls.Add(this.button2_register);
             this.Controls.Add(this.textBox4_password);
             this.Controls.Add(this.textBox2_name);
@@ -374,7 +483,7 @@
         private System.Windows.Forms.TextBox textBox3_surname;
         private System.Windows.Forms.TextBox textBox4_password;
         private System.Windows.Forms.TextBox textBox5_email;
-        private System.Windows.Forms.Label label3_email;
+        private System.Windows.Forms.Label label6_email;
         private System.Windows.Forms.Button button3_back;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button close_button;
@@ -382,5 +491,12 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label7_address;
+        private System.Windows.Forms.Label label8_number;
+        private System.Windows.Forms.Label label9_upin;
+        private System.Windows.Forms.TextBox textBox1_address;
+        private System.Windows.Forms.TextBox textBox2_number;
+        private System.Windows.Forms.TextBox textBox3_upin;
+        private System.Windows.Forms.CheckBox checkBox1_show;
     }
 }

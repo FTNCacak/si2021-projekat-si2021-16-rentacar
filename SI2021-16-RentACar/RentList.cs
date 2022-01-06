@@ -23,12 +23,6 @@ namespace SI2021_16_RentACar
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
         private void RentList_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
@@ -48,21 +42,16 @@ namespace SI2021_16_RentACar
             menu.Show();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             List<Car> cars = this.carBusiness.GetAllCars();
             Car c1 = new Car();
-            c1.Id_car = Convert.ToInt32(textBox1.Text);
+            c1.Id_car = Convert.ToInt32(numericCheck.Text);
             if (this.carBusiness.Checks(c1) && c1.Id_car != 0)
             {
                 foreach (Car c in cars)
-                { 
-                    if(c1.Id_car ==c.Id_car)
+                {
+                    if (c1.Id_car == c.Id_car)
                     {
                         label1.Text = c.free;
                     }
@@ -70,13 +59,8 @@ namespace SI2021_16_RentACar
             }
             else
             {
-                MessageBox.Show("This car is not asdasda!", "Availability", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                new MessageBoxRentList().ShowDialog();
             }
-        }
-
-        private void richTextBox1_cartext_TextChanged(object sender, EventArgs e)
-        {
-           
         }
 
         private void close_button_Click(object sender, EventArgs e)
@@ -89,12 +73,6 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-
-        }
-
         private void panel1_upper_Paint(object sender, PaintEventArgs e)
         {
 
@@ -102,7 +80,7 @@ namespace SI2021_16_RentACar
 
         private void RentList_Load(object sender, EventArgs e)
         {
-            
+            label4_loginID.Text = Login.BuyerId;
             using (SqlConnection SqlCon = new SqlConnection(Constants.connectionString))
             {
                 SqlCon.Open();

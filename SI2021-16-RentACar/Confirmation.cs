@@ -29,21 +29,14 @@ namespace SI2021_16_RentACar
             menu.Show();
         }
 
-        private void label3_ajssoft_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void button2_back_Click(object sender, EventArgs e)
+        private void Confirmation_Load(object sender, EventArgs e)
         {
-            Rent rent = new Rent();
-            this.Hide();
-            rent.Show();
+
         }
     }
 }

@@ -37,10 +37,9 @@
             this.panel2_down = new System.Windows.Forms.Panel();
             this.label3_ajssoft = new System.Windows.Forms.Label();
             this.button1_finish = new System.Windows.Forms.Button();
-            this.richTextBox1_cartext = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2_back = new System.Windows.Forms.Button();
+            this.listBox1_confirmation = new System.Windows.Forms.ListBox();
             this.panel1_upper.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2_down.SuspendLayout();
@@ -75,9 +74,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(419, 0);
+            this.close_button.Location = new System.Drawing.Point(422, 2);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 39;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -88,6 +87,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 41;
             this.pictureBox3.TabStop = false;
             // 
@@ -106,9 +106,9 @@
             // 
             this.panel2_down.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.panel2_down.Controls.Add(this.label3_ajssoft);
-            this.panel2_down.Location = new System.Drawing.Point(-1, 489);
+            this.panel2_down.Location = new System.Drawing.Point(-1, 498);
             this.panel2_down.Name = "panel2_down";
-            this.panel2_down.Size = new System.Drawing.Size(451, 37);
+            this.panel2_down.Size = new System.Drawing.Size(451, 32);
             this.panel2_down.TabIndex = 5;
             // 
             // label3_ajssoft
@@ -116,12 +116,11 @@
             this.label3_ajssoft.AutoSize = true;
             this.label3_ajssoft.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3_ajssoft.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label3_ajssoft.Location = new System.Drawing.Point(174, 9);
+            this.label3_ajssoft.Location = new System.Drawing.Point(166, 4);
             this.label3_ajssoft.Name = "label3_ajssoft";
             this.label3_ajssoft.Size = new System.Drawing.Size(107, 17);
             this.label3_ajssoft.TabIndex = 3;
             this.label3_ajssoft.Text = "© 2021. AJS Soft";
-            this.label3_ajssoft.Click += new System.EventHandler(this.label3_ajssoft_Click);
             // 
             // button1_finish
             // 
@@ -129,23 +128,13 @@
             this.button1_finish.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1_finish.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.button1_finish.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button1_finish.Location = new System.Drawing.Point(325, 441);
+            this.button1_finish.Location = new System.Drawing.Point(325, 443);
             this.button1_finish.Name = "button1_finish";
             this.button1_finish.Size = new System.Drawing.Size(93, 33);
             this.button1_finish.TabIndex = 26;
             this.button1_finish.Text = "Finish";
             this.button1_finish.UseVisualStyleBackColor = false;
             this.button1_finish.Click += new System.EventHandler(this.button1_finish_Click);
-            // 
-            // richTextBox1_cartext
-            // 
-            this.richTextBox1_cartext.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
-            this.richTextBox1_cartext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
-            this.richTextBox1_cartext.Location = new System.Drawing.Point(28, 100);
-            this.richTextBox1_cartext.Name = "richTextBox1_cartext";
-            this.richTextBox1_cartext.Size = new System.Drawing.Size(390, 325);
-            this.richTextBox1_cartext.TabIndex = 34;
-            this.richTextBox1_cartext.Text = "";
             // 
             // panel2
             // 
@@ -163,19 +152,17 @@
             this.panel1.Size = new System.Drawing.Size(18, 434);
             this.panel1.TabIndex = 36;
             // 
-            // button2_back
+            // listBox1_confirmation
             // 
-            this.button2_back.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
-            this.button2_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2_back.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.button2_back.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.button2_back.Location = new System.Drawing.Point(29, 441);
-            this.button2_back.Name = "button2_back";
-            this.button2_back.Size = new System.Drawing.Size(93, 33);
-            this.button2_back.TabIndex = 37;
-            this.button2_back.Text = "Back";
-            this.button2_back.UseVisualStyleBackColor = false;
-            this.button2_back.Click += new System.EventHandler(this.button2_back_Click);
+            this.listBox1_confirmation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(241)))), ((int)(((byte)(222)))));
+            this.listBox1_confirmation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.listBox1_confirmation.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBox1_confirmation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(39)))), ((int)(((byte)(1)))));
+            this.listBox1_confirmation.FormattingEnabled = true;
+            this.listBox1_confirmation.Location = new System.Drawing.Point(29, 94);
+            this.listBox1_confirmation.Name = "listBox1_confirmation";
+            this.listBox1_confirmation.Size = new System.Drawing.Size(389, 327);
+            this.listBox1_confirmation.TabIndex = 38;
             // 
             // Confirmation
             // 
@@ -183,10 +170,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.ClientSize = new System.Drawing.Size(446, 524);
-            this.Controls.Add(this.button2_back);
+            this.Controls.Add(this.listBox1_confirmation);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.richTextBox1_cartext);
             this.Controls.Add(this.button1_finish);
             this.Controls.Add(this.panel2_down);
             this.Controls.Add(this.panel1_upper);
@@ -196,6 +182,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Confirmation_FormClosed);
+            this.Load += new System.EventHandler(this.Confirmation_Load);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -212,12 +199,11 @@
         private System.Windows.Forms.Panel panel2_down;
         private System.Windows.Forms.Label label3_ajssoft;
         private System.Windows.Forms.Button button1_finish;
-        private System.Windows.Forms.RichTextBox richTextBox1_cartext;
         private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button2_back;
+        private System.Windows.Forms.ListBox listBox1_confirmation;
     }
 }

@@ -38,7 +38,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.richTextBox1_cartext = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4_loginID = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1_back = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -57,7 +59,6 @@
             this.label2_rentacar.Size = new System.Drawing.Size(173, 42);
             this.label2_rentacar.TabIndex = 33;
             this.label2_rentacar.Text = "Rent A Car";
-            this.label2_rentacar.Click += new System.EventHandler(this.label2_rentacar_Click);
             // 
             // label3_ajs
             // 
@@ -90,9 +91,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(544, 2);
+            this.close_button.Location = new System.Drawing.Point(547, 2);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 42;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -125,6 +126,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(3, 3);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 40;
             this.pictureBox2.TabStop = false;
             // 
@@ -138,16 +140,27 @@
             this.richTextBox1_cartext.Size = new System.Drawing.Size(517, 370);
             this.richTextBox1_cartext.TabIndex = 36;
             this.richTextBox1_cartext.Text = resources.GetString("richTextBox1_cartext.Text");
-            this.richTextBox1_cartext.TextChanged += new System.EventHandler(this.richTextBox1_cartext_TextChanged);
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel2.Controls.Add(this.label4_loginID);
             this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label4);
             this.panel2.Location = new System.Drawing.Point(-1, 568);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(573, 34);
             this.panel2.TabIndex = 38;
+            // 
+            // label4_loginID
+            // 
+            this.label4_loginID.AutoSize = true;
+            this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Name = "label4_loginID";
+            this.label4_loginID.Size = new System.Drawing.Size(0, 15);
+            this.label4_loginID.TabIndex = 43;
             // 
             // label3
             // 
@@ -159,6 +172,17 @@
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 0;
             this.label3.Text = "© 2021. AJS Soft";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label4.Location = new System.Drawing.Point(8, 7);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(65, 15);
+            this.label4.TabIndex = 42;
+            this.label4.Text = "Logged as:";
             // 
             // button1_back
             // 
@@ -208,6 +232,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Info_FormClosed);
+            this.Load += new System.EventHandler(this.Info_Load);
             this.panel1_upper.ResumeLayout(false);
             this.panel1_upper.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -232,5 +257,7 @@
         private System.Windows.Forms.Button close_button;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label4_loginID;
+        private System.Windows.Forms.Label label4;
     }
 }

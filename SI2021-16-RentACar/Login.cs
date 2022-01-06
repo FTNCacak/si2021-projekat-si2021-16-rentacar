@@ -16,6 +16,7 @@ namespace SI2021_16_RentACar
 {
     public partial class Login : Form
     {
+        public static string BuyerId = "";
         private readonly BuyerBusiness buyerBusiness;
 
         public Login()
@@ -23,32 +24,7 @@ namespace SI2021_16_RentACar
             this.buyerBusiness = new BuyerBusiness();
             InitializeComponent();
         }
-      
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_userID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button2_register_Click(object sender, EventArgs e)
         {
             Register register = new Register();
@@ -63,13 +39,14 @@ namespace SI2021_16_RentACar
             b.password = textBox2_password.Text;
             if (this.buyerBusiness.LogInBuyers(b))
             {
+                BuyerId = b.password;
                 this.Hide();
                 Menu menu = new Menu();
                 menu.ShowDialog();
             }
             else
             {
-                new MessageBox1().ShowDialog();
+                new MessageBoxLogin().ShowDialog();
             }
         }
 
@@ -80,29 +57,26 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_password_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void close_button_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void checkBox1_show_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1_show.Checked)
+            {
+                textBox2_password.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                textBox2_password.UseSystemPasswordChar = true;
+            }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

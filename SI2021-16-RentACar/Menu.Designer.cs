@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.panel1_under = new System.Windows.Forms.Panel();
+            this.label4_loginID = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button1_rent = new System.Windows.Forms.Button();
             this.button2_tos = new System.Windows.Forms.Button();
@@ -56,11 +58,34 @@
             // panel1_under
             // 
             this.panel1_under.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
+            this.panel1_under.Controls.Add(this.label4_loginID);
+            this.panel1_under.Controls.Add(this.label3);
             this.panel1_under.Controls.Add(this.label1);
             this.panel1_under.Location = new System.Drawing.Point(0, 520);
             this.panel1_under.Name = "panel1_under";
             this.panel1_under.Size = new System.Drawing.Size(935, 31);
             this.panel1_under.TabIndex = 1;
+            // 
+            // label4_loginID
+            // 
+            this.label4_loginID.AutoSize = true;
+            this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Name = "label4_loginID";
+            this.label4_loginID.Size = new System.Drawing.Size(0, 15);
+            this.label4_loginID.TabIndex = 37;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
+            this.label3.Location = new System.Drawing.Point(8, 7);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.TabIndex = 36;
+            this.label3.Text = "Logged as:";
             // 
             // label1
             // 
@@ -72,7 +97,6 @@
             this.label1.Size = new System.Drawing.Size(107, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "© 2021. AJS Soft";
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // button1_rent
             // 
@@ -140,7 +164,6 @@
             this.label3_ajs.Size = new System.Drawing.Size(145, 88);
             this.label3_ajs.TabIndex = 28;
             this.label3_ajs.Text = "AJS";
-            this.label3_ajs.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel2_upper
             // 
@@ -174,9 +197,9 @@
             this.close_button.FlatAppearance.BorderSize = 0;
             this.close_button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.close_button.Image = ((System.Drawing.Image)(resources.GetObject("close_button.Image")));
-            this.close_button.Location = new System.Drawing.Point(903, 0);
+            this.close_button.Location = new System.Drawing.Point(906, 3);
             this.close_button.Name = "close_button";
-            this.close_button.Size = new System.Drawing.Size(29, 23);
+            this.close_button.Size = new System.Drawing.Size(26, 23);
             this.close_button.TabIndex = 34;
             this.close_button.UseVisualStyleBackColor = true;
             this.close_button.Click += new System.EventHandler(this.close_button_Click);
@@ -187,6 +210,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(3, 3);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(24, 18);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 33;
             this.pictureBox3.TabStop = false;
             // 
@@ -209,7 +233,6 @@
             this.label1_mainmenu.Size = new System.Drawing.Size(109, 25);
             this.label1_mainmenu.TabIndex = 31;
             this.label1_mainmenu.Text = "Main Menu";
-            this.label1_mainmenu.Click += new System.EventHandler(this.label1_mainmenu_Click);
             // 
             // label2_rentacar
             // 
@@ -228,6 +251,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(210, 243);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(508, 204);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
             // 
@@ -268,6 +292,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Rent a Car - AJS";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Menu_FormClosed);
+            this.Load += new System.EventHandler(this.Menu_Load);
             this.panel1_under.ResumeLayout(false);
             this.panel1_under.PerformLayout();
             this.panel2_upper.ResumeLayout(false);
@@ -297,5 +322,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4_loginID;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -17,22 +17,8 @@ namespace SI2021_16_RentACar
             InitializeComponent();
             label1_message.Text = msgToDisplay;
         }
-        public void MessageBoxRegister1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void label1_message_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void button1_ok_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void button2_cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -45,6 +31,11 @@ namespace SI2021_16_RentACar
         private void MessageBoxRegister2_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void MessageBoxRegister2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

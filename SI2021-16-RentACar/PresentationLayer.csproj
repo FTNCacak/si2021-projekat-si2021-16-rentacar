@@ -65,6 +65,48 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <Compile Include="MessageBoxDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxDelete.Designer.cs">
+      <DependentUpon>MessageBoxDelete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxLogin.Designer.cs">
+      <DependentUpon>MessageBoxLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxRegister1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxRegister1.Designer.cs">
+      <DependentUpon>MessageBoxRegister1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxRegister2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxRegister2.Designer.cs">
+      <DependentUpon>MessageBoxRegister2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxRent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxRent.Designer.cs">
+      <DependentUpon>MessageBoxRent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxRentList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxRentList.Designer.cs">
+      <DependentUpon>MessageBoxRentList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxRentNext.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxRentNext.Designer.cs">
+      <DependentUpon>MessageBoxRentNext.cs</DependentUpon>
+    </Compile>
     <Compile Include="Register.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -105,6 +147,27 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxDelete.resx">
+      <DependentUpon>MessageBoxDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxLogin.resx">
+      <DependentUpon>MessageBoxLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxRegister1.resx">
+      <DependentUpon>MessageBoxRegister1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxRegister2.resx">
+      <DependentUpon>MessageBoxRegister2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxRent.resx">
+      <DependentUpon>MessageBoxRent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxRentList.resx">
+      <DependentUpon>MessageBoxRentList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxRentNext.resx">
+      <DependentUpon>MessageBoxRentNext.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

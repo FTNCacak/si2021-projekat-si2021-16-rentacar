@@ -27,18 +27,9 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void button2_cancel_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void MessageBoxRegister1_Load(object sender, EventArgs e)
         {
 
-        }
-        public void MessageBoxRegister1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
         }
     }
 }
