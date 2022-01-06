@@ -39,6 +39,7 @@ namespace DataLayer
                 SqlCommand sqlCommand = new SqlCommand();
                 sqlCommand.Connection = sqlConnection;
                 sqlCommand.CommandText = string.Format("INSERT INTO Reservations VALUES({0},{1})", r.days, r.finalPrice);
+                sqlConnection.Open();
                 return sqlCommand.ExecuteNonQuery();
             }
         }
