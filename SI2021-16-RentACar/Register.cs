@@ -76,7 +76,7 @@ namespace SI2021_16_RentACar
         {
             if (Regex.IsMatch(textBox5_email.Text, emailPattern) == false)
             {
-                MessageBox.Show("Greska2"); // MESSAGEBOX MORA DA SE NAPRAVI
+                new MessageBoxEmail().ShowDialog();
             }
         }
 

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace SI2021_16_RentACar
 {
-    public partial class MessageBoxDelete : Form
+    public partial class MessageBoxAdd : Form
     {
-        public MessageBoxDelete()
+        public MessageBoxAdd()
         {
             InitializeComponent();
-        }
-
-        private void close_button_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         private void button1_ok_Click(object sender, EventArgs e)
@@ -27,9 +22,9 @@ namespace SI2021_16_RentACar
             this.Close();
         }
 
-        private void MessageBoxDelete_Load(object sender, EventArgs e)
+        private void close_button_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

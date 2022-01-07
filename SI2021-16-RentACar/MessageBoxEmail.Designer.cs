@@ -1,6 +1,6 @@
 ﻿namespace SI2021_16_RentACar
 {
-    partial class MessageBoxDelete
+    partial class MessageBoxEmail
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageBoxDelete));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MessageBoxEmail));
             this.label1_message = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2_error = new System.Windows.Forms.Label();
@@ -51,9 +51,9 @@
             this.label1_message.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.label1_message.Location = new System.Drawing.Point(112, 62);
             this.label1_message.Name = "label1_message";
-            this.label1_message.Size = new System.Drawing.Size(279, 21);
-            this.label1_message.TabIndex = 108;
-            this.label1_message.Text = "Your information has been deleted.";
+            this.label1_message.Size = new System.Drawing.Size(258, 21);
+            this.label1_message.TabIndex = 101;
+            this.label1_message.Text = "Please enter valid email address.";
             this.label1_message.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel2
@@ -65,7 +65,7 @@
             this.panel2.Location = new System.Drawing.Point(-5, -3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(447, 26);
-            this.panel2.TabIndex = 102;
+            this.panel2.TabIndex = 95;
             // 
             // label2_error
             // 
@@ -108,7 +108,7 @@
             this.panel3.Location = new System.Drawing.Point(-8, 3);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(10, 183);
-            this.panel3.TabIndex = 105;
+            this.panel3.TabIndex = 98;
             // 
             // panel5
             // 
@@ -116,7 +116,7 @@
             this.panel5.Location = new System.Drawing.Point(434, 15);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(21, 170);
-            this.panel5.TabIndex = 107;
+            this.panel5.TabIndex = 100;
             // 
             // panel4
             // 
@@ -124,7 +124,7 @@
             this.panel4.Location = new System.Drawing.Point(-5, 178);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(447, 10);
-            this.panel4.TabIndex = 106;
+            this.panel4.TabIndex = 99;
             // 
             // pictureBox1
             // 
@@ -133,7 +133,7 @@
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(65, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 104;
+            this.pictureBox1.TabIndex = 97;
             this.pictureBox1.TabStop = false;
             // 
             // button1_ok
@@ -145,12 +145,12 @@
             this.button1_ok.Location = new System.Drawing.Point(170, 128);
             this.button1_ok.Name = "button1_ok";
             this.button1_ok.Size = new System.Drawing.Size(95, 31);
-            this.button1_ok.TabIndex = 103;
+            this.button1_ok.TabIndex = 96;
             this.button1_ok.Text = "Ok";
             this.button1_ok.UseVisualStyleBackColor = false;
             this.button1_ok.Click += new System.EventHandler(this.button1_ok_Click);
             // 
-            // MessageBoxDelete
+            // MessageBoxEmail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -165,10 +165,8 @@
             this.Controls.Add(this.button1_ok);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MessageBoxDelete";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MessageBoxDelete";
-            this.Load += new System.EventHandler(this.MessageBoxDelete_Load);
+            this.Name = "MessageBoxEmail";
+            this.Text = "MessageBoxEmail";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

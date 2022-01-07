@@ -108,21 +108,26 @@ namespace SI2021_16_RentACar
                         else
                         {
                             textBox8_price.Text = " ";
-                            new MessageBoxLogin().ShowDialog();
+                            new MessageBoxAdd().ShowDialog();
                         }
                     }
                 }
-            }
-            else
-            {
-                new MessageBoxLogin().ShowDialog();
             }
         }
 
         private void button1_delete_Click(object sender, EventArgs e)
         {
-            listBox1_rentacarlist.Items.Clear();
-            textBox8_price.Text = "";
+            if (listBox1_rentacarlist.Items.Count != 0)
+            {
+                listBox1_rentacarlist.Items.Clear();
+                textBox8_price.Text = "";
+                new MessageBoxDelete().ShowDialog();
+            }
+            else
+            {
+                new MessageBoxRentNext().ShowDialog();
+            }
+            
         }
     }
 }

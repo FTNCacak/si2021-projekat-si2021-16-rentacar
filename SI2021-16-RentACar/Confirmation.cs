@@ -60,6 +60,16 @@ namespace SI2021_16_RentACar
                     {
                         if (b.Id_user == id)
                         {
+                            listBox1_confirmation.Items.Add("Rent a Car - AJS");
+                            listBox1_confirmation.Items.Add("___________________________________");
+                            listBox1_confirmation.Items.Add(" ");
+                            listBox1_confirmation.Items.Add("Company name: AJS");
+                            listBox1_confirmation.Items.Add("Location: ");
+                            listBox1_confirmation.Items.Add("Email: racajs@ajs.com");
+                            listBox1_confirmation.Items.Add("Phone number: 032 551 551");
+                            listBox1_confirmation.Items.Add("Rent a Car - AJS");
+                            listBox1_confirmation.Items.Add("___________________________________");
+                            listBox1_confirmation.Items.Add(" ");
                             listBox1_confirmation.Items.Add("Name: " + b.Fname + " " + b.Lname);
                             listBox1_confirmation.Items.Add("Adress: " + b.address);
                             listBox1_confirmation.Items.Add("Phone Number: " + b.phoneNumber);
@@ -67,8 +77,19 @@ namespace SI2021_16_RentACar
                             listBox1_confirmation.Items.Add("UPIN: " + b.upin);
                             listBox1_confirmation.Items.Add("___________________________________");
                             listBox1_confirmation.Items.Add(" ");
-                            listBox1_confirmation.Items.Add("Car: " + c.brand + " " + c.name);
+                            listBox1_confirmation.Items.Add("Car: " + c.brand);
+                            listBox1_confirmation.Items.Add("Model: " + c.name);
+                            listBox1_confirmation.Items.Add("Year: " + c.year);
+                            listBox1_confirmation.Items.Add("Fuel: " + c.fuel);
                             listBox1_confirmation.Items.Add("Days rented: " + rid);
+                            listBox1_confirmation.Items.Add("___________________________________");
+                            listBox1_confirmation.Items.Add(" ");
+                            listBox1_confirmation.Items.Add("The Renter agrees to use Vehicle for legal purposes only, and ");
+                            listBox1_confirmation.Items.Add("follow all ordinances and regulations pf the road and otherwise, while");
+                            listBox1_confirmation.Items.Add("in possession pf the Vehicle. Renter Agrees NOT to sublet, sublease,");
+                            listBox1_confirmation.Items.Add("or load the vehicle with or without payment to any other party, or");
+                            listBox1_confirmation.Items.Add("allow any other party be in possession of the vehicle, including with");
+                            listBox1_confirmation.Items.Add("the ability to operate the vehicle.");
                         }
                     }
 

@@ -171,3 +171,5 @@ C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-developmen
 C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.MessageBoxRent.resources
 C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.MessageBoxDelete.resources
 C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.MessageBoxRentNext.resources
+C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.MessageBoxEmail.resources
+C:\Users\mjedor\Desktop\BeliClone3\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\SI2021_16_RentACar.MessageBoxAdd.resources
