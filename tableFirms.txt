@@ -1,0 +1,5 @@
+CREATE TABLE [dbo].[Firms] (
+    [Id_firm]  INT           NOT NULL,
+    [location] NVARCHAR (50) NOT NULL,
+    PRIMARY KEY CLUSTERED ([Id_firm] ASC)
+);

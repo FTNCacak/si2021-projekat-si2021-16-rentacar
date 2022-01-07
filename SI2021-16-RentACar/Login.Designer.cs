@@ -64,6 +64,7 @@
             this.textBox2_password.Size = new System.Drawing.Size(220, 22);
             this.textBox2_password.TabIndex = 15;
             this.textBox2_password.UseSystemPasswordChar = true;
+            this.textBox2_password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox2_password_KeyDown);
             // 
             // textBox1_userID
             // 
@@ -75,6 +76,7 @@
             this.textBox1_userID.Name = "textBox1_userID";
             this.textBox1_userID.Size = new System.Drawing.Size(220, 22);
             this.textBox1_userID.TabIndex = 20;
+            this.textBox1_userID.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_userID_KeyDown);
             // 
             // panel1_login
             // 

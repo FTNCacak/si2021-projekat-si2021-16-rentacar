@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[Firms] ([Id_firm], [location]) VALUES (1, N'Cacak')

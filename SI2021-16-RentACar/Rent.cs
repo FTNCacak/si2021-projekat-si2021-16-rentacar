@@ -16,6 +16,7 @@ namespace SI2021_16_RentACar
     {
         public static int CarId;
         public static int ReservationId;
+        public static decimal FinalPrice;
         private readonly CarBusiness carBusiness;
         private readonly ReservationBusiness reservationBusiness;
         private readonly BuyerBusiness buyerBusiness;
@@ -86,22 +87,30 @@ namespace SI2021_16_RentACar
                         {
                             textBox8_price.Text = " ";
                             r1.finalPrice = c1.amount * c.pricePD * r1.days;
+                            FinalPrice = r1.finalPrice;
                             this.reservationBusiness.InsertReservation(r1);
                             CarId = c1.Id_car;
                             foreach (Buyer b in buyers)
                             {
                                 if (b.Id_user == id)
                                 {
-                                    textBox8_price.Text = Convert.ToString(r1.finalPrice);
-                                    listBox1_rentacarlist.Items.Add("Name: " + b.Fname + " " + b.Lname);
-                                    listBox1_rentacarlist.Items.Add("Adress: " + b.address);
-                                    listBox1_rentacarlist.Items.Add("Phone Number: " + b.phoneNumber);
-                                    listBox1_rentacarlist.Items.Add("Email: " + b.email);
-                                    listBox1_rentacarlist.Items.Add("UPIN: " + b.upin);
+                                    textBox8_price.Text = Convert.ToString(r1.finalPrice + "€");
                                     listBox1_rentacarlist.Items.Add("___________________________________");
                                     listBox1_rentacarlist.Items.Add(" ");
-                                    listBox1_rentacarlist.Items.Add("Car: " + c.brand + " " + c.name);
-                                    listBox1_rentacarlist.Items.Add("Days rented: " + r1.days);
+                                    listBox1_rentacarlist.Items.Add("- Name: " + b.Fname + " " + b.Lname);
+                                    listBox1_rentacarlist.Items.Add("- Adress: " + b.address);
+                                    listBox1_rentacarlist.Items.Add("- Phone Number: " + b.phoneNumber);
+                                    listBox1_rentacarlist.Items.Add("- Email: " + b.email);
+                                    listBox1_rentacarlist.Items.Add("- UPIN: " + b.upin);
+                                    listBox1_rentacarlist.Items.Add("___________________________________");
+                                    listBox1_rentacarlist.Items.Add(" ");
+                                    listBox1_rentacarlist.Items.Add("- Car: " + c.brand);
+                                    listBox1_rentacarlist.Items.Add("- Model: " + c.name);
+                                    listBox1_rentacarlist.Items.Add("- Year: " + c.year);
+                                    listBox1_rentacarlist.Items.Add("- Fuel: " + c.fuel);
+                                    listBox1_rentacarlist.Items.Add("- Days rented: " + r1.days);
+                                    listBox1_rentacarlist.Items.Add("___________________________________");
+                                    listBox1_rentacarlist.Items.Add(" ");
                                 }
                             }
                         }

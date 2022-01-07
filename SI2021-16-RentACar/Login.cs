@@ -39,7 +39,7 @@ namespace SI2021_16_RentACar
             b.password = textBox2_password.Text;
             if (this.buyerBusiness.LogInBuyers(b))
             {
-                BuyerId = b.password;
+                BuyerId = b.Id_user;
                 this.Hide();
                 Menu menu = new Menu();
                 menu.ShowDialog();
@@ -77,6 +77,24 @@ namespace SI2021_16_RentACar
         private void Login_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void textBox1_userID_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                textBox2_password.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void textBox2_password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                button1_login.Focus();
+                e.SuppressKeyPress = true;
+            }
         }
     }
 }
