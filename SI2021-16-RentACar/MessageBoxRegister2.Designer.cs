@@ -197,7 +197,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxRegister2";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MessageBoxRegister2_FormClosed);
-            this.Load += new System.EventHandler(this.MessageBoxRegister2_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

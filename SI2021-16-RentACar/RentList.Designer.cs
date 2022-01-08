@@ -69,7 +69,6 @@
             this.panel1_upper.Name = "panel1_upper";
             this.panel1_upper.Size = new System.Drawing.Size(649, 91);
             this.panel1_upper.TabIndex = 1;
-            this.panel1_upper.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_upper_Paint);
             // 
             // label2
             // 
@@ -272,7 +271,6 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(0, 20);
             this.label1.TabIndex = 70;
-            this.label1.Click += new System.EventHandler(this.label1_Click_1);
             // 
             // numericCheck
             // 

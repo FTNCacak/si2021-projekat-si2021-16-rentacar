@@ -74,11 +74,6 @@ namespace SI2021_16_RentACar
             }
         }
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBox1_userID_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.Enter)

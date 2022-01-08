@@ -168,7 +168,6 @@
             this.Name = "MessageBoxDelete";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxDelete";
-            this.Load += new System.EventHandler(this.MessageBoxDelete_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

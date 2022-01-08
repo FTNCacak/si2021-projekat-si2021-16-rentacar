@@ -168,7 +168,6 @@
             this.Name = "MessageBoxRentNext";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxRentListNext";
-            this.Load += new System.EventHandler(this.MessageBoxRentNext_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

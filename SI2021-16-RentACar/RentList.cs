@@ -73,11 +73,6 @@ namespace SI2021_16_RentACar
             Application.Exit();
         }
 
-        private void panel1_upper_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void RentList_Load(object sender, EventArgs e)
         {
             label4_loginID.Text = Login.BuyerId;
@@ -90,11 +85,6 @@ namespace SI2021_16_RentACar
                 dataGridView1.DataSource = dt;
                 dataGridView1.AllowUserToAddRows = false;
             }
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }

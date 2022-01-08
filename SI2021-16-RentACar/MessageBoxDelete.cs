@@ -26,10 +26,5 @@ namespace SI2021_16_RentACar
         {
             this.Close();
         }
-
-        private void MessageBoxDelete_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -31,10 +31,5 @@ namespace SI2021_16_RentACar
         {
             this.Close();
         }
-
-        private void MessageBoxLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

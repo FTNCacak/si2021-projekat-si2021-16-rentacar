@@ -180,7 +180,6 @@
             this.Name = "MessageBoxRegister1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MessageBoxRegister1";
-            this.Load += new System.EventHandler(this.MessageBoxRegister1_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

@@ -31,11 +31,6 @@ namespace SI2021_16_RentACar
             rent.Show();
         }
 
-        private void MessageBoxRent_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void close_button_Click(object sender, EventArgs e)
         {
             this.Close();

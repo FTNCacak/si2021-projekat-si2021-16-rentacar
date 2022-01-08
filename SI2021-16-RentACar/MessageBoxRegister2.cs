@@ -28,11 +28,6 @@ namespace SI2021_16_RentACar
             this.Close();
         }
 
-        private void MessageBoxRegister2_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void MessageBoxRegister2_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
