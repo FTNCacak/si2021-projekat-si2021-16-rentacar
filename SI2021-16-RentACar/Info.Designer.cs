@@ -157,7 +157,7 @@
             this.label4_loginID.AutoSize = true;
             this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Location = new System.Drawing.Point(83, 7);
             this.label4_loginID.Name = "label4_loginID";
             this.label4_loginID.Size = new System.Drawing.Size(0, 15);
             this.label4_loginID.TabIndex = 43;
@@ -180,9 +180,9 @@
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.label4.Location = new System.Drawing.Point(8, 7);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 15);
+            this.label4.Size = new System.Drawing.Size(78, 15);
             this.label4.TabIndex = 42;
-            this.label4.Text = "Logged as:";
+            this.label4.Text = "Logged in as:";
             // 
             // button1_back
             // 

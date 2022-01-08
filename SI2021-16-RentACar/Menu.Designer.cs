@@ -59,8 +59,8 @@
             // 
             this.panel1_under.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.panel1_under.Controls.Add(this.label4_loginID);
-            this.panel1_under.Controls.Add(this.label3);
             this.panel1_under.Controls.Add(this.label1);
+            this.panel1_under.Controls.Add(this.label3);
             this.panel1_under.Location = new System.Drawing.Point(0, 520);
             this.panel1_under.Name = "panel1_under";
             this.panel1_under.Size = new System.Drawing.Size(935, 31);
@@ -71,7 +71,7 @@
             this.label4_loginID.AutoSize = true;
             this.label4_loginID.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4_loginID.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
-            this.label4_loginID.Location = new System.Drawing.Point(70, 7);
+            this.label4_loginID.Location = new System.Drawing.Point(83, 7);
             this.label4_loginID.Name = "label4_loginID";
             this.label4_loginID.Size = new System.Drawing.Size(0, 15);
             this.label4_loginID.TabIndex = 37;
@@ -83,9 +83,9 @@
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(227)))), ((int)(((byte)(189)))));
             this.label3.Location = new System.Drawing.Point(8, 7);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 15);
+            this.label3.Size = new System.Drawing.Size(78, 15);
             this.label3.TabIndex = 36;
-            this.label3.Text = "Logged as:";
+            this.label3.Text = "Logged in as:";
             // 
             // label1
             // 
