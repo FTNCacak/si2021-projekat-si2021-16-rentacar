@@ -10,16 +10,6 @@ namespace DataLayer
 {
     public class BuyerRepository
     {
-        public int InsertBuyer(Buyer b)
-        {
-            using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
-            {
-                SqlCommand sqlCommand = new SqlCommand();
-                sqlCommand.Connection = sqlConnection;
-                sqlCommand.CommandText = string.Format("INSERT INTO Buyers VALUES('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", b.Id_user, b.Fname, b.Lname, b.address, b.phoneNumber, b.email, b.password, b.upin);
-                return sqlCommand.ExecuteNonQuery();
-            }
-        }
         public int RegisterBuyer(Buyer b)
         {
             using (SqlConnection sqlConnection = new SqlConnection(Constants.connectionString))
