@@ -46,8 +46,8 @@ namespace SI2021_16_RentACar
         {
             List<Car> cars = this.carBusiness.GetAllCars();
             Car c1 = new Car();
-            c1.Id_car = Convert.ToInt32(numericCheck.Text);
-            if (this.carBusiness.Checks(c1) && c1.Id_car != 0)
+            c1.Id_car = Convert.ToInt32(numericCheck.Value);
+            if (this.carBusiness.Checks(c1))
             {
                 foreach (Car c in cars)
                 {
@@ -85,6 +85,11 @@ namespace SI2021_16_RentACar
                 dataGridView1.DataSource = dt;
                 dataGridView1.AllowUserToAddRows = false;
             }
+        }
+
+        private void numericCheck_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

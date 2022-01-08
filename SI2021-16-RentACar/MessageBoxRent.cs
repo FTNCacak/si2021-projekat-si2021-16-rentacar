@@ -33,7 +33,9 @@ namespace SI2021_16_RentACar
 
         private void close_button_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Rent rent = new Rent();
+            this.Hide();
+            rent.Show();
         }
     }
 }

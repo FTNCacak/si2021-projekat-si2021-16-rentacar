@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\Data
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLayer", "BusinessLayer\BusinessLayer.csproj", "{0A2B9D35-45F3-418D-9518-78E3B68AC84E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACarTest", "RentACarTest\RentACarTest.csproj", "{029EF0B5-114E-4CE2-B59D-362DF20AC1B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0A2B9D35-45F3-418D-9518-78E3B68AC84E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0A2B9D35-45F3-418D-9518-78E3B68AC84E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0A2B9D35-45F3-418D-9518-78E3B68AC84E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{029EF0B5-114E-4CE2-B59D-362DF20AC1B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{029EF0B5-114E-4CE2-B59D-362DF20AC1B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{029EF0B5-114E-4CE2-B59D-362DF20AC1B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{029EF0B5-114E-4CE2-B59D-362DF20AC1B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

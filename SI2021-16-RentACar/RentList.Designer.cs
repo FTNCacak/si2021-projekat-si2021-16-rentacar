@@ -278,9 +278,25 @@
             this.numericCheck.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.numericCheck.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(32)))), ((int)(((byte)(18)))));
             this.numericCheck.Location = new System.Drawing.Point(88, 121);
+            this.numericCheck.Maximum = new decimal(new int[] {
+            19,
+            0,
+            0,
+            0});
+            this.numericCheck.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericCheck.Name = "numericCheck";
             this.numericCheck.Size = new System.Drawing.Size(101, 20);
             this.numericCheck.TabIndex = 71;
+            this.numericCheck.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericCheck.ValueChanged += new System.EventHandler(this.numericCheck_ValueChanged);
             // 
             // RentList
             // 

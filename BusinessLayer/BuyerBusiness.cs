@@ -21,8 +21,8 @@ namespace BusinessLayer
         }
         public bool RegisterBuyers(Buyer b)
         {
-            if (this.buyerRepository.RegisterBuyer(b) > 0 && (b.email != string.Empty || b.Id_user != string.Empty || b.Fname != string.Empty || b.Lname != string.Empty
-                || b.password != string.Empty || b.address != string.Empty || b.phoneNumber != string.Empty || b.upin != string.Empty))
+            if (this.buyerRepository.RegisterBuyer(b) > 0 && (b.email != string.Empty && b.Id_user != string.Empty && b.Fname != string.Empty && b.Lname != string.Empty
+                && b.password != string.Empty && b.address != string.Empty && b.phoneNumber != string.Empty && b.upin != string.Empty))
             {
                 return true;
             }

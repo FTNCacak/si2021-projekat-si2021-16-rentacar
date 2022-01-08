@@ -61,3 +61,12 @@ C:\Users\mjedor\Desktop\Projekat\si2021-projekat-si2021-16-rentacar-development 
 C:\Users\mjedor\Desktop\Projekat\si2021-projekat-si2021-16-rentacar-development (2)\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
 C:\Users\mjedor\Desktop\Projekat\si2021-projekat-si2021-16-rentacar-development (2)\BusinessLayer\obj\Debug\BusinessLayer.dll
 C:\Users\mjedor\Desktop\Projekat\si2021-projekat-si2021-16-rentacar-development (2)\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\bin\Debug\DataLayer.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\bin\Debug\DataLayer.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\obj\Debug\BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\BusinessLayer\obj\Debug\BusinessLayer.pdb
