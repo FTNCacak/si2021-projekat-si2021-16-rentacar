@@ -299,3 +299,4 @@ C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\SI2021-16-RentACar
 C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CopyComplete
 C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.exe
 C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\SI2021-16-RentACar\obj\Debug\SI2021-16-RentACar.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\SI2021-16-RentACar\obj\Debug\PresentationLayer.csproj.CopyComplete

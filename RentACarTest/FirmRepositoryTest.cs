@@ -12,7 +12,6 @@ namespace RentACarTest
         public FirmRepository firmRepository;
         FirmBusiness firmBusiness;
         public Firm firm;
-        Firm f = new Firm();
 
         [TestInitialize]
         public void init()

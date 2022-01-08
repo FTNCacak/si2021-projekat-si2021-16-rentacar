@@ -10,10 +10,10 @@ namespace RentACarTest
     [TestClass]
     public class CarRepositoryTest
     {
+        bool test = false;
         public CarRepository carRepository;
         CarBusiness carBusiness;
         public Car car1;
-        Car c = new Car();
 
         [TestInitialize]
         public void init()
@@ -38,21 +38,8 @@ namespace RentACarTest
         [TestMethod]
         public void IsCarSelected()
         {
-
-            this.carBusiness = new CarBusiness();
-            List<Car> car = new List<Car>();
-
-            foreach (Car c in car)
-            {
-                if (car1.Id_car == c.Id_car)
-                {
-                    return;
-                }
-
-
-
-            }
-            Assert.IsTrue(true);
+            test = carRepository.Check(car1) != 0;
+            Assert.IsTrue(test);
         }
 
         [TestMethod]

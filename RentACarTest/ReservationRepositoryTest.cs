@@ -11,7 +11,6 @@ namespace RentACarTest
         public ReservationRepositoryTest reservationRepository;
         ReservationBusiness reservationBusiness;
         public Reservation res;
-        Reservation r = new Reservation();
 
         [TestInitialize]
         public void init()

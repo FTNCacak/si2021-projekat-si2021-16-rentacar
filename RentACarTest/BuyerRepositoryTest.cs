@@ -10,12 +10,11 @@ namespace RentACarTest
     [TestClass]
     public class BuyerRepositoryTest
     {
+        bool test = false;
         public Buyer buyer1;
-        private Buyer buyer2;
         public BuyerRepository buyerRepository;
-        Buyer b = new Buyer();
         BuyerBusiness buyerBusiness;
-        
+
         [TestInitialize]
         public void init()
         {
@@ -33,43 +32,20 @@ namespace RentACarTest
                 password = "12345",
                 upin = "76234123461"
             };
-            buyer2 = buyer1;
 
         }
         [TestMethod]
         public void IsBuyerInserted()
         {
-            List<Buyer> buyer = new List<Buyer>();
-
-            foreach (Buyer b in buyer)
-            {
-                if (buyer1.Id_user == buyer2.Id_user && buyer1.Fname == buyer2.Fname && buyer1.Lname == buyer2.Lname && buyer1.address == buyer2.address && buyer1.phoneNumber == buyer2.phoneNumber
-                    && buyer1.email == buyer2.email && buyer1.password == buyer2.password && buyer1.upin == buyer2.upin)
-                {
-                    return;
-                }
-            }
-            Assert.IsTrue(true);
+           test = this.buyerRepository.RegisterBuyer(buyer1) < 1;
+           Assert.IsTrue(test);
 
         }
         [TestMethod]
         public void IsLoginInserted()
         {
-
-            this.buyerBusiness = new BuyerBusiness();
-            List<Buyer> buyer = new List<Buyer>();
-
-            foreach (Buyer b in buyer)
-            {
-                if (buyer1.Id_user == b.Id_user)
-                {
-                    return;
-                }
-
-
-
-            }
-            Assert.IsTrue(true);
+            test = this.buyerRepository.LogInBuyer(buyer1) != 0;
+            Assert.IsTrue(test);
         }
 
 
