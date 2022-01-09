@@ -1,7 +1,0 @@
-CREATE TABLE [dbo].[Reservations] (
-    [Id_reservation] INT             IDENTITY (120, 1) NOT NULL,
-    [days]           INT             NOT NULL,
-    [finalPrice]     DECIMAL (18, 2) NOT NULL,
-    PRIMARY KEY CLUSTERED ([Id_reservation] ASC)
-);
-
