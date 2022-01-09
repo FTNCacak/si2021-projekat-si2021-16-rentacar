@@ -1,0 +1,56 @@
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\RentACarTest.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\RentACarTest.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\DataLayer.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\DataLayer.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.csproj.AssemblyReference.cache
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.csproj.CoreCompileInputs.cache
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.csproj.CopyComplete
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.pdb
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\BusinessLayer.dll
+C:\Users\mjedor\Desktop\si2021-projekat-si2021-16-rentacar-development (1)\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\BusinessLayer.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\RentACarTest.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\RentACarTest.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\BusinessLayer.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\DataLayer.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\BusinessLayer.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\DataLayer.pdb
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.csproj.AssemblyReference.cache
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.csproj.CoreCompileInputs.cache
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.dll
+C:\Users\jevre\OneDrive\Radna površina\New folder\si2021-projekat-si2021-16-rentacar-development\RentACarTest\obj\Debug\RentACarTest.pdb
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\RentACarTest.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\RentACarTest.pdb
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\BusinessLayer.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\DataLayer.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\BusinessLayer.pdb
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\DataLayer.pdb
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\obj\Debug\RentACarTest.csproj.AssemblyReference.cache
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\obj\Debug\RentACarTest.csproj.CoreCompileInputs.cache
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\obj\Debug\RentACarTest.csproj.CopyComplete
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\obj\Debug\RentACarTest.dll
+C:\Users\mjedor\Desktop\tr\si2021-projekat-si2021-16-rentacar\RentACarTest\obj\Debug\RentACarTest.pdb
