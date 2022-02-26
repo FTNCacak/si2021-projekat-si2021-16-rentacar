@@ -1,0 +1,12 @@
+CREATE TABLE [dbo].[Buyers] (
+    [Id_user]     NVARCHAR (50) NOT NULL,
+    [Fname]       NVARCHAR (50) NULL,
+    [Lname]       NVARCHAR (50) NULL,
+    [address]     NVARCHAR (50) NULL,
+    [phoneNumber] NVARCHAR (50) NULL,
+    [email]       NVARCHAR (50) NULL,
+    [password]    NVARCHAR (50) NULL,
+    [upin]        NVARCHAR (50) NULL,
+    PRIMARY KEY CLUSTERED ([Id_user] ASC)
+);
+
